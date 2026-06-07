@@ -1,18 +1,14 @@
-﻿# mworago 2026
+# mworago-theme
 
-Thème WordPress multilingue pour [mworago.com](https://fr.mworago.com) — actualités K-pop et K-drama en 14 langues.
-
-Développé par [Breizhzion](https://breizhzion.fr).
+Thème WordPress multilingue pour [mworago.com](https://mworago.com) — actualités K-pop et K-drama en 14 langues.
 
 ![mworago.com](screenshot.png)
-
 
 ## Sites déployés
 
 | Site | Langue |
 |------|--------|
 | mworago.com | Français |
-| beta.mworago.com | Français (beta) |
 | es.mworago.com | Español |
 | de.mworago.com | Deutsch |
 | it.mworago.com | Italiano |
@@ -29,7 +25,7 @@ Développé par [Breizhzion](https://breizhzion.fr).
 ## Structure
 
 ```
-mworago-2026/
+mworago-theme/
 ├── style.css               — déclaration thème + CSS global
 ├── functions.php           — enqueue styles/scripts, register menus, theme mods
 ├── header.php / footer.php — layout principal
@@ -38,7 +34,7 @@ mworago-2026/
 ├── single.php              — article individuel
 ├── archive.php             — archives catégorie/tag
 ├── page.php                — page statique
-├── page-comebacks.php      — page Comebacks (JSON mworago)
+├── page-comebacks.php      — page Comebacks
 ├── page-dramas.php         — page Dramas
 ├── page-top-charts.php     — page Top Charts K-pop
 ├── page-top-airing.php     — page Top Dramas en cours
@@ -61,14 +57,10 @@ mworago-2026/
 Fichiers `.po` dans `languages/`. Compiler les `.mo` dans le container Docker :
 
 ```bash
-docker exec mworago-es-wp wp i18n make-mo \
-  /var/www/html/wp-content/themes/mworago-2026/languages/ --allow-root
+docker exec mworago-wp wp i18n make-mo \
+  /var/www/html/wp-content/themes/mworago-theme/languages/ --allow-root
 ```
-
-## Déploiement
-
-Voir la documentation interne : `docs/services/mworago-deploy-theme.md`
 
 ## Licence
 
-Propriétaire — Breizhzion. Tous droits réservés.
+Propriétaire. Tous droits réservés.
