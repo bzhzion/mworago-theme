@@ -1,17 +1,17 @@
 ﻿# mworago 2026
 
-Thème WordPress multilingue pour [mworago.me](https://fr.mworago.com) — actualités K-pop et K-drama en 14 langues.
+Thème WordPress multilingue pour [mworago.com](https://fr.mworago.com) — actualités K-pop et K-drama en 14 langues.
 
 Développé par [Breizhzion](https://breizhzion.fr).
 
-![mworago.me](screenshot.png)
+![mworago.com](screenshot.png)
 
 
 ## Sites déployés
 
 | Site | Langue |
 |------|--------|
-| mworago.me | Français |
+| mworago.com | Français |
 | beta.mworago.com | Français (beta) |
 | es.mworago.com | Español |
 | de.mworago.com | Deutsch |
