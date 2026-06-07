@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create zip
+        run: |
+          mkdir -p dist
+          zip -r dist/mworago-theme.zip . \
+            --exclude "*.git*" \
+            --exclude ".github/*" \
+            --exclude "dist/*"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/mworago-theme.zip
+          generate_release_notes: false
