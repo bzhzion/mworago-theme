@@ -1,0 +1,210 @@
+﻿# mworago 2026 — Terjemahan bahasa Indonesia
+# Copyright (C) 2026 mworago
+# Locale: id_ID
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: id_ID\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+
+msgid "Publicité"
+msgstr "Iklan"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Dukung kami"
+
+msgid "Ouvrir le menu"
+msgstr "Buka menu"
+
+msgid "Changer le thème"
+msgstr "Ganti tema"
+
+msgid "All rights reserved"
+msgstr "Hak cipta dilindungi"
+
+msgid "Navigation des pages"
+msgstr "Navigasi halaman"
+
+msgid "Articles précédent et suivant"
+msgstr "Artikel sebelum dan berikutnya"
+
+msgid "Previous article"
+msgstr "Artikel sebelumnya"
+
+msgid "Next article"
+msgstr "Artikel berikutnya"
+
+msgid "Read article"
+msgstr "Baca artikel"
+
+msgid "View all"
+msgstr "Lihat semua"
+
+msgid "View all news"
+msgstr "Semua berita"
+
+msgid "Latest news"
+msgstr "Berita terbaru"
+
+msgid "Recent articles"
+msgstr "Artikel terkini"
+
+msgid "In the same category"
+msgstr "Dalam kategori yang sama"
+
+msgid "Back to home"
+msgstr "Kembali ke beranda"
+
+msgid "Share"
+msgstr "Bagikan"
+
+msgid "Share on Facebook"
+msgstr "Bagikan di Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Bagikan di X / Twitter"
+
+msgid "Copy link"
+msgstr "Salin tautan"
+
+msgid "Stay in the K-pop loop"
+msgstr "Ikuti berita K-pop terkini"
+
+msgid "Subscribe"
+msgstr "Berlangganan"
+
+msgid "your@email.com"
+msgstr "email@anda.com"
+
+msgid "Archive"
+msgstr "Arsip"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "Author"
+msgstr "Penulis"
+
+msgid "Day"
+msgstr "Hari"
+
+msgid "Month"
+msgstr "Bulan"
+
+msgid "Year"
+msgstr "Tahun"
+
+msgid "Results for"
+msgstr "Hasil untuk"
+
+msgid "No results."
+msgstr "Tidak ada hasil."
+
+msgid "Suggestions:"
+msgstr "Saran:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Tidak ada artikel untuk \"%s\". Coba kata kunci lain."
+
+msgid "Page not found"
+msgstr "Halaman tidak ditemukan"
+
+msgid "No articles found."
+msgstr "Tidak ada artikel."
+
+msgid "No articles in this category."
+msgstr "Tidak ada artikel dalam kategori ini."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Diperbarui pada %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Tidak ada data."
+
+msgid "À venir"
+msgstr "Segera"
+
+msgid "Récents"
+msgstr "Terkini"
+
+msgid "Sortie"
+msgstr "Rilis"
+
+msgid "Aujourd'hui"
+msgstr "Hari ini"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d artikel"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d menit baca"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ep."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d hasil"
+
+msgid "All articles"
+msgstr "Semua artikel"
+
+msgid "Search"
+msgstr "Pencarian"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Halaman ini tidak ada atau telah dipindahkan. Idol bergerak cepat."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Berita K-pop harian di kotak masuk Anda: comeback, tangga lagu, drama, tidak ada yang terlewat."
+
+msgid "Liens du thème"
+msgstr "Pengaturan tema"
+
+msgid "Réseaux sociaux"
+msgstr "Media sosial"
+
+msgid "Placeholder de la recherche"
+msgstr "Placeholder pencarian"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL tombol di header dan footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Iklan diblokir — untuk terus mengakses konten ini secara gratis, nonaktifkan pemblokir Anda atau"
+
+msgid "soutenez-nous"
+msgstr "dukung kami"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Akses gratis tanpa batas melalui aplikasi mobile."
+
+msgid "Install the app"
+msgstr "Instal aplikasi"
+
+msgid "Sign in"
+msgstr "Masuk"

@@ -1,0 +1,214 @@
+﻿# mworago 2026 — English translation
+# Copyright (C) 2026 mworago
+# Locale: en_US
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: en_US\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgid "Publicité"
+msgstr "Advertisement"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Support us"
+
+msgid "Ouvrir le menu"
+msgstr "Open menu"
+
+msgid "Changer le thème"
+msgstr "Toggle theme"
+
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+msgid "Navigation des pages"
+msgstr "Page navigation"
+
+msgid "Articles précédent et suivant"
+msgstr "Previous and next articles"
+
+msgid "Previous article"
+msgstr "Previous article"
+
+msgid "Next article"
+msgstr "Next article"
+
+msgid "Read article"
+msgstr "Read article"
+
+msgid "View all"
+msgstr "View all"
+
+msgid "View all news"
+msgstr "View all news"
+
+msgid "Latest news"
+msgstr "Latest news"
+
+msgid "Recent articles"
+msgstr "Recent articles"
+
+msgid "In the same category"
+msgstr "In the same category"
+
+msgid "Back to home"
+msgstr "Back to home"
+
+msgid "Share"
+msgstr "Share"
+
+msgid "Share on Facebook"
+msgstr "Share on Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Share on X / Twitter"
+
+msgid "Copy link"
+msgstr "Copy link"
+
+msgid "Stay in the K-pop loop"
+msgstr "Stay in the K-pop loop"
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+msgid "your@email.com"
+msgstr "your@email.com"
+
+msgid "Archive"
+msgstr "Archive"
+
+msgid "Category"
+msgstr "Category"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "Author"
+msgstr "Author"
+
+msgid "Day"
+msgstr "Day"
+
+msgid "Month"
+msgstr "Month"
+
+msgid "Year"
+msgstr "Year"
+
+msgid "Results for"
+msgstr "Results for"
+
+msgid "No results."
+msgstr "No results."
+
+msgid "Suggestions:"
+msgstr "Suggestions:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "No articles for \"%s\". Try different keywords."
+
+msgid "Page not found"
+msgstr "Page not found"
+
+msgid "No articles found."
+msgstr "No articles found."
+
+msgid "No articles in this category."
+msgstr "No articles in this category."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Updated on %s"
+
+msgid "Aucune donnée disponible."
+msgstr "No data available."
+
+msgid "À venir"
+msgstr "Upcoming"
+
+msgid "Récents"
+msgstr "Recent"
+
+msgid "Sortie"
+msgstr "Release"
+
+msgid "Aujourd'hui"
+msgstr "Today"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d article"
+msgstr[1] "%d articles"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min read"
+msgstr[1] "%d min read"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ep."
+msgstr[1] "%d eps."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d result found"
+msgstr[1] "%d results found"
+
+msgid "All articles"
+msgstr "All articles"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "This page does not exist or has been moved. Idols move fast."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+
+msgid "Liens du thème"
+msgstr "Theme settings"
+
+msgid "Réseaux sociaux"
+msgstr "Social networks"
+
+msgid "Placeholder de la recherche"
+msgstr "Search placeholder"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL of the button in the header and footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Ad blocked — to continue accessing this content for free, disable your blocker or"
+
+msgid "soutenez-nous"
+msgstr "support us"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Get unlimited free access via the mobile app."
+
+msgid "Install the app"
+msgstr "Install the app"
+
+msgid "Sign in"
+msgstr "Sign in"

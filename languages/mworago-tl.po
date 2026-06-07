@@ -1,0 +1,214 @@
+﻿# mworago 2026 — Tagalog na pagsasalin
+# Copyright (C) 2026 mworago
+# Locale: tl
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: tl\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgid "Publicité"
+msgstr "Advertisement"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Suportahan kami"
+
+msgid "Ouvrir le menu"
+msgstr "Buksan ang menu"
+
+msgid "Changer le thème"
+msgstr "Palitan ang tema"
+
+msgid "All rights reserved"
+msgstr "Lahat ng karapatan ay nakalaan"
+
+msgid "Navigation des pages"
+msgstr "Nabigasyon ng pahina"
+
+msgid "Articles précédent et suivant"
+msgstr "Nakaraang at susunod na artikulo"
+
+msgid "Previous article"
+msgstr "Nakaraang artikulo"
+
+msgid "Next article"
+msgstr "Susunod na artikulo"
+
+msgid "Read article"
+msgstr "Basahin ang artikulo"
+
+msgid "View all"
+msgstr "Tingnan lahat"
+
+msgid "View all news"
+msgstr "Lahat ng balita"
+
+msgid "Latest news"
+msgstr "Pinakabagong balita"
+
+msgid "Recent articles"
+msgstr "Mga kamakailang artikulo"
+
+msgid "In the same category"
+msgstr "Sa parehong kategorya"
+
+msgid "Back to home"
+msgstr "Bumalik sa simula"
+
+msgid "Share"
+msgstr "Ibahagi"
+
+msgid "Share on Facebook"
+msgstr "Ibahagi sa Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Ibahagi sa X / Twitter"
+
+msgid "Copy link"
+msgstr "Kopyahin ang link"
+
+msgid "Stay in the K-pop loop"
+msgstr "Manatiling updated sa K-pop"
+
+msgid "Subscribe"
+msgstr "Mag-subscribe"
+
+msgid "your@email.com"
+msgstr "iyong@email.com"
+
+msgid "Archive"
+msgstr "Arkibo"
+
+msgid "Category"
+msgstr "Kategorya"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "Author"
+msgstr "May-akda"
+
+msgid "Day"
+msgstr "Araw"
+
+msgid "Month"
+msgstr "Buwan"
+
+msgid "Year"
+msgstr "Taon"
+
+msgid "Results for"
+msgstr "Mga resulta para sa"
+
+msgid "No results."
+msgstr "Walang resulta."
+
+msgid "Suggestions:"
+msgstr "Mga mungkahi:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Walang artikulo para sa \"%s\". Subukan ang ibang mga keyword."
+
+msgid "Page not found"
+msgstr "Hindi nahanap ang pahina"
+
+msgid "No articles found."
+msgstr "Walang artikulong nahanap."
+
+msgid "No articles in this category."
+msgstr "Walang artikulo sa kategoryang ito."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Na-update noong %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Walang datos."
+
+msgid "À venir"
+msgstr "Paparating"
+
+msgid "Récents"
+msgstr "Kamakailang"
+
+msgid "Sortie"
+msgstr "Labas"
+
+msgid "Aujourd'hui"
+msgstr "Ngayon"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d artikulo"
+msgstr[1] "%d mga artikulo"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min basa"
+msgstr[1] "%d min basa"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ep."
+msgstr[1] "%d eps."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d resulta nahanap"
+msgstr[1] "%d mga resulta nahanap"
+
+msgid "All articles"
+msgstr "Lahat ng artikulo"
+
+msgid "Search"
+msgstr "Paghahanap"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Ang pahinang ito ay wala o inilipat na. Mabilis ang mga idol."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Araw-araw na balita sa K-pop sa iyong inbox: comebacks, charts, drama, walang makakalampas."
+
+msgid "Liens du thème"
+msgstr "Mga setting ng tema"
+
+msgid "Réseaux sociaux"
+msgstr "Mga social network"
+
+msgid "Placeholder de la recherche"
+msgstr "Placeholder ng paghahanap"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL ng button sa header at footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Na-block ang ad — para patuloy na ma-access ang content na ito nang libre, i-disable ang iyong blocker o"
+
+msgid "soutenez-nous"
+msgstr "suportahan kami"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Makakuha ng walang limitasyong libreng access sa pamamagitan ng mobile app."
+
+msgid "Install the app"
+msgstr "I-install ang app"
+
+msgid "Sign in"
+msgstr "Mag-sign in"

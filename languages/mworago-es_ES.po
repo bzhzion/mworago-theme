@@ -1,0 +1,213 @@
+﻿# mworago 2026 — Traducción española
+# Copyright (C) 2026 mworago
+# Locale: es_ES
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: es_ES\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Publicité"
+msgstr "Publicidad"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Apóyanos"
+
+msgid "Ouvrir le menu"
+msgstr "Abrir el menú"
+
+msgid "Changer le thème"
+msgstr "Cambiar el tema"
+
+msgid "All rights reserved"
+msgstr "Todos los derechos reservados"
+
+msgid "Navigation des pages"
+msgstr "Navegación de páginas"
+
+msgid "Articles précédent et suivant"
+msgstr "Artículos anterior y siguiente"
+
+msgid "Previous article"
+msgstr "Artículo anterior"
+
+msgid "Next article"
+msgstr "Artículo siguiente"
+
+msgid "Read article"
+msgstr "Leer el artículo"
+
+msgid "View all"
+msgstr "Ver todo"
+
+msgid "View all news"
+msgstr "Ver todas las noticias"
+
+msgid "Latest news"
+msgstr "Últimas noticias"
+
+msgid "Recent articles"
+msgstr "Artículos recientes"
+
+msgid "In the same category"
+msgstr "En la misma categoría"
+
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+msgid "Share"
+msgstr "Compartir"
+
+msgid "Share on Facebook"
+msgstr "Compartir en Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Compartir en X / Twitter"
+
+msgid "Copy link"
+msgstr "Copiar enlace"
+
+msgid "Stay in the K-pop loop"
+msgstr "Mantente al día con el K-pop"
+
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+msgid "your@email.com"
+msgstr "tu@email.com"
+
+msgid "Archive"
+msgstr "Archivo"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Day"
+msgstr "Día"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "Year"
+msgstr "Año"
+
+msgid "Results for"
+msgstr "Resultados para"
+
+msgid "No results."
+msgstr "Sin resultados."
+
+msgid "Suggestions:"
+msgstr "Sugerencias:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "No hay artículos para \"%s\". Prueba con otras palabras clave."
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "No articles found."
+msgstr "No se encontraron artículos."
+
+msgid "No articles in this category."
+msgstr "No hay artículos en esta categoría."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Actualizado el %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Ningún dato disponible."
+
+msgid "À venir"
+msgstr "Próximos"
+
+msgid "Récents"
+msgstr "Recientes"
+
+msgid "Sortie"
+msgstr "Lanzamiento"
+
+msgid "Aujourd'hui"
+msgstr "Hoy"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d artículo"
+msgstr[1] "%d artículos"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min de lectura"
+msgstr[1] "%d min de lectura"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ep."
+msgstr[1] "%d eps."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d resultado encontrado"
+msgstr[1] "%d resultados encontrados"
+
+msgid "All articles"
+msgstr "Todos los artículos"
+
+msgid "Search"
+msgstr "Búsqueda"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Esta página no existe o se ha movido. Los idols se mueven rápido."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Noticias K-pop diarias en tu bandeja de entrada: comebacks, charts, dramas, nada se te escapa."
+
+msgid "Liens du thème"
+msgstr "Ajustes del tema"
+
+msgid "Réseaux sociaux"
+msgstr "Redes sociales"
+
+msgid "Placeholder de la recherche"
+msgstr "Placeholder de búsqueda"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL del botón en el header y el footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Publicidad bloqueada — para seguir accediendo gratuitamente a este contenido, desactiva tu bloqueador o"
+
+msgid "soutenez-nous"
+msgstr "apóyanos"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Acceso ilimitado y gratuito a través de la aplicación móvil."
+
+msgid "Install the app"
+msgstr "Instalar la aplicación"
+
+msgid "Sign in"
+msgstr "Iniciar sesión"

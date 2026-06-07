@@ -1,0 +1,214 @@
+﻿# mworago 2026 — Tradução portuguesa
+# Copyright (C) 2026 mworago
+# Locale: pt_PT
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: pt_PT\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgid "Publicité"
+msgstr "Publicidade"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Apoie-nos"
+
+msgid "Ouvrir le menu"
+msgstr "Abrir menu"
+
+msgid "Changer le thème"
+msgstr "Mudar tema"
+
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+msgid "Navigation des pages"
+msgstr "Navegação de páginas"
+
+msgid "Articles précédent et suivant"
+msgstr "Artigo anterior e seguinte"
+
+msgid "Previous article"
+msgstr "Artigo anterior"
+
+msgid "Next article"
+msgstr "Próximo artigo"
+
+msgid "Read article"
+msgstr "Ler artigo"
+
+msgid "View all"
+msgstr "Ver tudo"
+
+msgid "View all news"
+msgstr "Ver todas as notícias"
+
+msgid "Latest news"
+msgstr "Últimas notícias"
+
+msgid "Recent articles"
+msgstr "Artigos recentes"
+
+msgid "In the same category"
+msgstr "Na mesma categoria"
+
+msgid "Back to home"
+msgstr "Voltar ao início"
+
+msgid "Share"
+msgstr "Partilhar"
+
+msgid "Share on Facebook"
+msgstr "Partilhar no Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Partilhar no X / Twitter"
+
+msgid "Copy link"
+msgstr "Copiar link"
+
+msgid "Stay in the K-pop loop"
+msgstr "Fique por dentro do K-pop"
+
+msgid "Subscribe"
+msgstr "Subscrever"
+
+msgid "your@email.com"
+msgstr "seu@email.pt"
+
+msgid "Archive"
+msgstr "Arquivo"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Day"
+msgstr "Dia"
+
+msgid "Month"
+msgstr "Mês"
+
+msgid "Year"
+msgstr "Ano"
+
+msgid "Results for"
+msgstr "Resultados para"
+
+msgid "No results."
+msgstr "Sem resultados."
+
+msgid "Suggestions:"
+msgstr "Sugestões:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Sem artigos para \"%s\". Tente outras palavras-chave."
+
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+msgid "No articles found."
+msgstr "Nenhum artigo encontrado."
+
+msgid "No articles in this category."
+msgstr "Sem artigos nesta categoria."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Atualizado em %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Sem dados disponíveis."
+
+msgid "À venir"
+msgstr "Em breve"
+
+msgid "Récents"
+msgstr "Recentes"
+
+msgid "Sortie"
+msgstr "Lançamento"
+
+msgid "Aujourd'hui"
+msgstr "Hoje"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d artigo"
+msgstr[1] "%d artigos"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min de leitura"
+msgstr[1] "%d min de leitura"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ep."
+msgstr[1] "%d eps."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d resultado encontrado"
+msgstr[1] "%d resultados encontrados"
+
+msgid "All articles"
+msgstr "Todos os artigos"
+
+msgid "Search"
+msgstr "Pesquisa"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Esta página não existe ou foi movida. Os idols são rápidos."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Notícias K-pop diárias na sua caixa de entrada: comebacks, charts, dramas, nada escapa."
+
+msgid "Liens du thème"
+msgstr "Configurações do tema"
+
+msgid "Réseaux sociaux"
+msgstr "Redes sociais"
+
+msgid "Placeholder de la recherche"
+msgstr "Placeholder de pesquisa"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL do botão no cabeçalho e rodapé."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Anúncio bloqueado — para continuar a aceder gratuitamente a este conteúdo, desative o seu bloqueador ou"
+
+msgid "soutenez-nous"
+msgstr "apoie-nos"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Acesso ilimitado e gratuito através da aplicação móvel."
+
+msgid "Install the app"
+msgstr "Instalar a aplicação"
+
+msgid "Sign in"
+msgstr "Iniciar sessão"

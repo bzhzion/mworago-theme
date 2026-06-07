@@ -1,0 +1,191 @@
+﻿# mworago 2026 — Traduction française (strings anglais uniquement)
+# Copyright (C) 2026 mworago
+# Locale: fr_FR
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: fr_FR\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+msgid "Publicité"
+msgstr "Publicité"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+msgid "Previous article"
+msgstr "Article précédent"
+
+msgid "Next article"
+msgstr "Article suivant"
+
+msgid "Read article"
+msgstr "Lire l'article"
+
+msgid "View all"
+msgstr "Voir tout"
+
+msgid "View all news"
+msgstr "Voir toutes les actualités"
+
+msgid "Latest news"
+msgstr "Dernières actualités"
+
+msgid "Recent articles"
+msgstr "Articles récents"
+
+msgid "In the same category"
+msgstr "Dans la même catégorie"
+
+msgid "Back to home"
+msgstr "Retour à l'accueil"
+
+msgid "Share"
+msgstr "Partager"
+
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Partager sur X / Twitter"
+
+msgid "Copy link"
+msgstr "Copier le lien"
+
+msgid "Stay in the K-pop loop"
+msgstr "Restez dans la boucle K-pop"
+
+msgid "Subscribe"
+msgstr "S'abonner"
+
+msgid "your@email.com"
+msgstr "votre@email.com"
+
+msgid "Archive"
+msgstr "Archive"
+
+msgid "Category"
+msgstr "Catégorie"
+
+msgid "Tag"
+msgstr "Étiquette"
+
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Day"
+msgstr "Jour"
+
+msgid "Month"
+msgstr "Mois"
+
+msgid "Year"
+msgstr "Année"
+
+msgid "Results for"
+msgstr "Résultats pour"
+
+msgid "No results."
+msgstr "Aucun résultat."
+
+msgid "Suggestions:"
+msgstr "Suggestions :"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Aucun article pour \"%s\". Essayez d'autres mots-clés."
+
+msgid "Page not found"
+msgstr "Page introuvable"
+
+
+msgid "You're so close to reading the rest! The mworago app gives you free unlimited access to all exclusive articles. Download it, or sign up for free."
+msgstr "Tu es à deux doigts de lire la suite ! L'app mworago te donne un accès gratuit et illimité à tous les articles exclusifs. Télécharge-la, ou inscris-toi gratuitement."
+
+msgid "Install the app"
+msgstr "Installer l'application"
+
+msgid "Sign up for free"
+msgstr "S'inscrire gratuitement"
+
+msgid "No articles found."
+msgstr "Aucun article trouvé."
+
+msgid "No articles in this category."
+msgstr "Aucun article dans cette catégorie."
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min de lecture"
+msgstr[1] "%d min de lecture"
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d résultat trouvé"
+msgstr[1] "%d résultats trouvés"
+
+msgid "All articles"
+msgstr "Tous les articles"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Cette page n'existe pas ou a été déplacée. Les idols vont vite."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "L'actu K-pop tous les jours dans ta boîte mail : comebacks, charts, dramas, rien ne t'échappe."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+
+msgid "soutenez-nous"
+msgstr "soutenez-nous"
+
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s commentaire"
+msgstr[1] "%s commentaires"
+
+msgid "No comments yet. Be the first!"
+msgstr "Aucun commentaire pour l'instant. Soyez le premier !"
+
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+msgid "Reply to %s"
+msgstr "Répondre à %s"
+
+msgid "Cancel reply"
+msgstr "Annuler la réponse"
+
+msgid "Post comment"
+msgstr "Publier"
+
+msgid "Comment"
+msgstr "Commentaire"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Reply"
+msgstr "Répondre"
+
+msgid "Awaiting moderation"
+msgstr "En attente de modération"
+
+msgid "Older comments"
+msgstr "Commentaires plus anciens"
+
+msgid "Newer comments"
+msgstr "Commentaires plus récents"

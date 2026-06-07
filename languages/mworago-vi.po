@@ -1,0 +1,210 @@
+﻿# mworago 2026 — Bản dịch tiếng Việt
+# Copyright (C) 2026 mworago
+# Locale: vi
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: vi\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+
+msgid "Publicité"
+msgstr "Quảng cáo"
+
+msgid "Live"
+msgstr "Trực tiếp"
+
+msgid "Nous soutenir"
+msgstr "Ủng hộ chúng tôi"
+
+msgid "Ouvrir le menu"
+msgstr "Mở menu"
+
+msgid "Changer le thème"
+msgstr "Đổi chủ đề"
+
+msgid "All rights reserved"
+msgstr "Đã đăng ký bản quyền"
+
+msgid "Navigation des pages"
+msgstr "Điều hướng trang"
+
+msgid "Articles précédent et suivant"
+msgstr "Bài trước và bài tiếp theo"
+
+msgid "Previous article"
+msgstr "Bài trước"
+
+msgid "Next article"
+msgstr "Bài tiếp theo"
+
+msgid "Read article"
+msgstr "Đọc bài viết"
+
+msgid "View all"
+msgstr "Xem tất cả"
+
+msgid "View all news"
+msgstr "Tất cả tin tức"
+
+msgid "Latest news"
+msgstr "Tin tức mới nhất"
+
+msgid "Recent articles"
+msgstr "Bài viết gần đây"
+
+msgid "In the same category"
+msgstr "Trong cùng danh mục"
+
+msgid "Back to home"
+msgstr "Về trang chủ"
+
+msgid "Share"
+msgstr "Chia sẻ"
+
+msgid "Share on Facebook"
+msgstr "Chia sẻ trên Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "Chia sẻ trên X / Twitter"
+
+msgid "Copy link"
+msgstr "Sao chép liên kết"
+
+msgid "Stay in the K-pop loop"
+msgstr "Cập nhật tin tức K-pop"
+
+msgid "Subscribe"
+msgstr "Đăng ký"
+
+msgid "your@email.com"
+msgstr "email@cua-ban.com"
+
+msgid "Archive"
+msgstr "Lưu trữ"
+
+msgid "Category"
+msgstr "Danh mục"
+
+msgid "Tag"
+msgstr "Thẻ"
+
+msgid "Author"
+msgstr "Tác giả"
+
+msgid "Day"
+msgstr "Ngày"
+
+msgid "Month"
+msgstr "Tháng"
+
+msgid "Year"
+msgstr "Năm"
+
+msgid "Results for"
+msgstr "Kết quả cho"
+
+msgid "No results."
+msgstr "Không có kết quả."
+
+msgid "Suggestions:"
+msgstr "Gợi ý:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Không có bài viết cho \"%s\". Thử từ khóa khác."
+
+msgid "Page not found"
+msgstr "Không tìm thấy trang"
+
+msgid "No articles found."
+msgstr "Không tìm thấy bài viết."
+
+msgid "No articles in this category."
+msgstr "Không có bài viết trong danh mục này."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Cập nhật ngày %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Không có dữ liệu."
+
+msgid "À venir"
+msgstr "Sắp ra mắt"
+
+msgid "Récents"
+msgstr "Gần đây"
+
+msgid "Sortie"
+msgstr "Phát hành"
+
+msgid "Aujourd'hui"
+msgstr "Hôm nay"
+
+msgid "Ép. %d"
+msgstr "Tập %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d bài viết"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d phút đọc"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d tập"
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d kết quả"
+
+msgid "All articles"
+msgstr "Tất cả bài viết"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Trang này không tồn tại hoặc đã bị chuyển. Idol di chuyển nhanh lắm."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Tin K-pop hàng ngày trong hộp thư của bạn: comebacks, bảng xếp hạng, phim, không bỏ lỡ gì."
+
+msgid "Liens du thème"
+msgstr "Cài đặt giao diện"
+
+msgid "Réseaux sociaux"
+msgstr "Mạng xã hội"
+
+msgid "Placeholder de la recherche"
+msgstr "Gợi ý tìm kiếm"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL nút trong header và footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Quảng cáo bị chặn — để tiếp tục truy cập miễn phí nội dung này, hãy tắt trình chặn của bạn hoặc"
+
+msgid "soutenez-nous"
+msgstr "ủng hộ chúng tôi"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Truy cập miễn phí không giới hạn qua ứng dụng di động."
+
+msgid "Install the app"
+msgstr "Cài đặt ứng dụng"
+
+msgid "Sign in"
+msgstr "Đăng nhập"

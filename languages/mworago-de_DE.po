@@ -1,0 +1,214 @@
+﻿# mworago 2026 — Deutsche Übersetzung
+# Copyright (C) 2026 mworago
+# Locale: de_DE
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: de_DE\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgid "Publicité"
+msgstr "Anzeige"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "Unterstützt uns"
+
+msgid "Ouvrir le menu"
+msgstr "Menü öffnen"
+
+msgid "Changer le thème"
+msgstr "Design wechseln"
+
+msgid "All rights reserved"
+msgstr "Alle Rechte vorbehalten"
+
+msgid "Navigation des pages"
+msgstr "Seitennavigation"
+
+msgid "Articles précédent et suivant"
+msgstr "Vorheriger und nächster Artikel"
+
+msgid "Previous article"
+msgstr "Vorheriger Artikel"
+
+msgid "Next article"
+msgstr "Nächster Artikel"
+
+msgid "Read article"
+msgstr "Artikel lesen"
+
+msgid "View all"
+msgstr "Alle anzeigen"
+
+msgid "View all news"
+msgstr "Alle Neuigkeiten"
+
+msgid "Latest news"
+msgstr "Neueste Nachrichten"
+
+msgid "Recent articles"
+msgstr "Aktuelle Artikel"
+
+msgid "In the same category"
+msgstr "In der gleichen Kategorie"
+
+msgid "Back to home"
+msgstr "Zurück zur Startseite"
+
+msgid "Share"
+msgstr "Teilen"
+
+msgid "Share on Facebook"
+msgstr "Auf Facebook teilen"
+
+msgid "Share on X / Twitter"
+msgstr "Auf X / Twitter teilen"
+
+msgid "Copy link"
+msgstr "Link kopieren"
+
+msgid "Stay in the K-pop loop"
+msgstr "Bleib auf dem Laufenden mit K-pop"
+
+msgid "Subscribe"
+msgstr "Abonnieren"
+
+msgid "your@email.com"
+msgstr "deine@email.de"
+
+msgid "Archive"
+msgstr "Archiv"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Tag"
+msgstr "Schlagwort"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Day"
+msgstr "Tag"
+
+msgid "Month"
+msgstr "Monat"
+
+msgid "Year"
+msgstr "Jahr"
+
+msgid "Results for"
+msgstr "Ergebnisse für"
+
+msgid "No results."
+msgstr "Keine Ergebnisse."
+
+msgid "Suggestions:"
+msgstr "Vorschläge:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "Keine Artikel für \"%s\". Versuche andere Suchbegriffe."
+
+msgid "Page not found"
+msgstr "Seite nicht gefunden"
+
+msgid "No articles found."
+msgstr "Keine Artikel gefunden."
+
+msgid "No articles in this category."
+msgstr "Keine Artikel in dieser Kategorie."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "Aktualisiert am %s"
+
+msgid "Aucune donnée disponible."
+msgstr "Keine Daten verfügbar."
+
+msgid "À venir"
+msgstr "Bald"
+
+msgid "Récents"
+msgstr "Aktuell"
+
+msgid "Sortie"
+msgstr "Veröffentlichung"
+
+msgid "Aujourd'hui"
+msgstr "Heute"
+
+msgid "Ép. %d"
+msgstr "Ep. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d Artikel"
+msgstr[1] "%d Artikel"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d min lesen"
+msgstr[1] "%d min lesen"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d Ep."
+msgstr[1] "%d Eps."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d Ergebnis gefunden"
+msgstr[1] "%d Ergebnisse gefunden"
+
+msgid "All articles"
+msgstr "Alle Artikel"
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "Diese Seite existiert nicht oder wurde verschoben. Idols sind schnell."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "Tägliche K-pop-News in deinem Posteingang: Comebacks, Charts, Dramen, nichts entgeht dir."
+
+msgid "Liens du thème"
+msgstr "Theme-Einstellungen"
+
+msgid "Réseaux sociaux"
+msgstr "Soziale Netzwerke"
+
+msgid "Placeholder de la recherche"
+msgstr "Suche-Platzhalter"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL des Buttons im Header und Footer."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "Werbung blockiert — um weiterhin kostenlos auf diese Inhalte zuzugreifen, deaktiviere deinen Werbeblocker oder"
+
+msgid "soutenez-nous"
+msgstr "unterstütze uns"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "Unbegrenzter kostenloser Zugang über die mobile App."
+
+msgid "Install the app"
+msgstr "App installieren"
+
+msgid "Sign in"
+msgstr "Anmelden"

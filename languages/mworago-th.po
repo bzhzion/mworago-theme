@@ -1,0 +1,210 @@
+﻿# mworago 2026 — การแปลภาษาไทย
+# Copyright (C) 2026 mworago
+# Locale: th
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: th\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+
+msgid "Publicité"
+msgstr "โฆษณา"
+
+msgid "Live"
+msgstr "สด"
+
+msgid "Nous soutenir"
+msgstr "สนับสนุนเรา"
+
+msgid "Ouvrir le menu"
+msgstr "เปิดเมนู"
+
+msgid "Changer le thème"
+msgstr "เปลี่ยนธีม"
+
+msgid "All rights reserved"
+msgstr "สงวนลิขสิทธิ์"
+
+msgid "Navigation des pages"
+msgstr "การนำทางหน้า"
+
+msgid "Articles précédent et suivant"
+msgstr "บทความก่อนหน้าและถัดไป"
+
+msgid "Previous article"
+msgstr "บทความก่อนหน้า"
+
+msgid "Next article"
+msgstr "บทความถัดไป"
+
+msgid "Read article"
+msgstr "อ่านบทความ"
+
+msgid "View all"
+msgstr "ดูทั้งหมด"
+
+msgid "View all news"
+msgstr "ข่าวทั้งหมด"
+
+msgid "Latest news"
+msgstr "ข่าวล่าสุด"
+
+msgid "Recent articles"
+msgstr "บทความล่าสุด"
+
+msgid "In the same category"
+msgstr "ในหมวดหมู่เดียวกัน"
+
+msgid "Back to home"
+msgstr "กลับหน้าหลัก"
+
+msgid "Share"
+msgstr "แชร์"
+
+msgid "Share on Facebook"
+msgstr "แชร์บน Facebook"
+
+msgid "Share on X / Twitter"
+msgstr "แชร์บน X / Twitter"
+
+msgid "Copy link"
+msgstr "คัดลอกลิงก์"
+
+msgid "Stay in the K-pop loop"
+msgstr "ติดตามข่าว K-pop"
+
+msgid "Subscribe"
+msgstr "สมัครสมาชิก"
+
+msgid "your@email.com"
+msgstr "อีเมล@ของคุณ.com"
+
+msgid "Archive"
+msgstr "คลังข้อมูล"
+
+msgid "Category"
+msgstr "หมวดหมู่"
+
+msgid "Tag"
+msgstr "แท็ก"
+
+msgid "Author"
+msgstr "ผู้เขียน"
+
+msgid "Day"
+msgstr "วัน"
+
+msgid "Month"
+msgstr "เดือน"
+
+msgid "Year"
+msgstr "ปี"
+
+msgid "Results for"
+msgstr "ผลลัพธ์สำหรับ"
+
+msgid "No results."
+msgstr "ไม่พบผลลัพธ์"
+
+msgid "Suggestions:"
+msgstr "คำแนะนำ:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "ไม่พบบทความสำหรับ \"%s\" ลองคำค้นอื่น"
+
+msgid "Page not found"
+msgstr "ไม่พบหน้า"
+
+msgid "No articles found."
+msgstr "ไม่พบบทความ"
+
+msgid "No articles in this category."
+msgstr "ไม่มีบทความในหมวดหมู่นี้"
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "อัปเดตเมื่อ %s"
+
+msgid "Aucune donnée disponible."
+msgstr "ไม่มีข้อมูล"
+
+msgid "À venir"
+msgstr "เร็วๆ นี้"
+
+msgid "Récents"
+msgstr "ล่าสุด"
+
+msgid "Sortie"
+msgstr "วางจำหน่าย"
+
+msgid "Aujourd'hui"
+msgstr "วันนี้"
+
+msgid "Ép. %d"
+msgstr "ตอนที่ %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d บทความ"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d นาที"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ตอน"
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "พบ %d รายการ"
+
+msgid "All articles"
+msgstr "บทความทั้งหมด"
+
+msgid "Search"
+msgstr "ค้นหา"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "หน้านี้ไม่มีอยู่หรือถูกย้ายไปแล้ว ไอดอลเคลื่อนไหวเร็วมาก"
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "ข่าว K-pop ทุกวันในอีเมลของคุณ: คัมแบ็ก, ชาร์ต, ดราม่า, ไม่พลาดอะไรทั้งนั้น"
+
+msgid "Liens du thème"
+msgstr "การตั้งค่าธีม"
+
+msgid "Réseaux sociaux"
+msgstr "โซเชียลมีเดีย"
+
+msgid "Placeholder de la recherche"
+msgstr "ตัวอย่างการค้นหา"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "URL ปุ่มใน header และ footer"
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "โฆษณาถูกบล็อก — เพื่อเข้าถึงเนื้อหานี้ฟรีต่อไป ปิดตัวบล็อกของคุณหรือ"
+
+msgid "soutenez-nous"
+msgstr "สนับสนุนเรา"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "เข้าถึงฟรีไม่จำกัดผ่านแอปมือถือ"
+
+msgid "Install the app"
+msgstr "ติดตั้งแอป"
+
+msgid "Sign in"
+msgstr "เข้าสู่ระบบ"

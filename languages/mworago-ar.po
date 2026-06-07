@@ -1,0 +1,214 @@
+﻿# mworago 2026 — الترجمة العربية
+# Copyright (C) 2026 mworago
+# Locale: ar
+msgid ""
+msgstr ""
+"Project-Id-Version: mworago 2026\n"
+"POT-Creation-Date: 2026-05-28\n"
+"PO-Revision-Date: 2026-05-28\n"
+"Language: ar\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgid "Publicité"
+msgstr "إعلان"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Nous soutenir"
+msgstr "ادعمونا"
+
+msgid "Ouvrir le menu"
+msgstr "فتح القائمة"
+
+msgid "Changer le thème"
+msgstr "تغيير السمة"
+
+msgid "All rights reserved"
+msgstr "جميع الحقوق محفوظة"
+
+msgid "Navigation des pages"
+msgstr "تصفح الصفحات"
+
+msgid "Articles précédent et suivant"
+msgstr "المقال السابق والتالي"
+
+msgid "Previous article"
+msgstr "المقال السابق"
+
+msgid "Next article"
+msgstr "المقال التالي"
+
+msgid "Read article"
+msgstr "اقرأ المقال"
+
+msgid "View all"
+msgstr "عرض الكل"
+
+msgid "View all news"
+msgstr "جميع الأخبار"
+
+msgid "Latest news"
+msgstr "آخر الأخبار"
+
+msgid "Recent articles"
+msgstr "مقالات حديثة"
+
+msgid "In the same category"
+msgstr "في نفس الفئة"
+
+msgid "Back to home"
+msgstr "العودة إلى الرئيسية"
+
+msgid "Share"
+msgstr "مشاركة"
+
+msgid "Share on Facebook"
+msgstr "مشاركة على فيسبوك"
+
+msgid "Share on X / Twitter"
+msgstr "مشاركة على X / تويتر"
+
+msgid "Copy link"
+msgstr "نسخ الرابط"
+
+msgid "Stay in the K-pop loop"
+msgstr "ابق على اطلاع بأخبار الكيبوب"
+
+msgid "Subscribe"
+msgstr "اشترك"
+
+msgid "your@email.com"
+msgstr "بريدك@email.com"
+
+msgid "Archive"
+msgstr "أرشيف"
+
+msgid "Category"
+msgstr "فئة"
+
+msgid "Tag"
+msgstr "وسم"
+
+msgid "Author"
+msgstr "المؤلف"
+
+msgid "Day"
+msgstr "يوم"
+
+msgid "Month"
+msgstr "شهر"
+
+msgid "Year"
+msgstr "سنة"
+
+msgid "Results for"
+msgstr "نتائج لـ"
+
+msgid "No results."
+msgstr "لا نتائج."
+
+msgid "Suggestions:"
+msgstr "اقتراحات:"
+
+msgid "No articles for \"%s\". Try different keywords."
+msgstr "لا مقالات لـ \"%s\". جرب كلمات مفتاحية أخرى."
+
+msgid "Page not found"
+msgstr "الصفحة غير موجودة"
+
+msgid "No articles found."
+msgstr "لا مقالات."
+
+msgid "No articles in this category."
+msgstr "لا مقالات في هذه الفئة."
+
+msgid "K-pop"
+msgstr "K-pop"
+
+msgid "K-drama"
+msgstr "K-drama"
+
+msgid "Mis à jour le %s"
+msgstr "تحديث: %s"
+
+msgid "Aucune donnée disponible."
+msgstr "لا بيانات متاحة."
+
+msgid "À venir"
+msgstr "قادم"
+
+msgid "Récents"
+msgstr "حديث"
+
+msgid "Sortie"
+msgstr "إصدار"
+
+msgid "Aujourd'hui"
+msgstr "اليوم"
+
+msgid "Ép. %d"
+msgstr "ح. %d"
+
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d مقال"
+msgstr[1] "%d مقالات"
+
+msgid "%d min read"
+msgid_plural "%d min read"
+msgstr[0] "%d دقيقة قراءة"
+msgstr[1] "%d دقيقة قراءة"
+
+msgid "%d ép."
+msgid_plural "%d éps."
+msgstr[0] "%d ح."
+msgstr[1] "%d ح."
+
+msgid "%d result found"
+msgid_plural "%d results found"
+msgstr[0] "%d نتيجة"
+msgstr[1] "%d نتائج"
+
+msgid "All articles"
+msgstr "جميع المقالات"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "This page does not exist or has been moved. Idols move fast."
+msgstr "هذه الصفحة غير موجودة أو تم نقلها. الأيدول يتحركون بسرعة."
+
+msgid "Daily K-pop news in your inbox: comebacks, charts, drama, nothing slips through."
+msgstr "أخبار K-pop يومية في بريدك الوارد: عودات، مخططات، دراما، لا شيء يفوتك."
+
+msgid "Liens du thème"
+msgstr "إعدادات السمة"
+
+msgid "Réseaux sociaux"
+msgstr "شبكات التواصل"
+
+msgid "Placeholder de la recherche"
+msgstr "نص البحث"
+
+msgid "URL du bouton dans le header et le footer."
+msgstr "رابط الزر في الرأس والتذييل."
+
+msgid "Pub bloquée — pour continuer à accéder gratuitement à ce contenu, désactivez votre bloqueur ou"
+msgstr "الإعلان محجوب — للاستمرار في الوصول إلى هذا المحتوى مجانًا، قم بتعطيل مانع الإعلانات أو"
+
+msgid "soutenez-nous"
+msgstr "ادعمنا"
+
+
+msgid "Get unlimited free access via the mobile app."
+msgstr "احصل على وصول مجاني غير محدود عبر تطبيق الجوال."
+
+msgid "Install the app"
+msgstr "تثبيت التطبيق"
+
+msgid "Sign in"
+msgstr "تسجيل الدخول"
