@@ -632,6 +632,18 @@ add_action( 'login_enqueue_scripts', function() {
     body.login p#nav, body.login p#backtoblog { background: none !important; }
     body.login .language-switcher { display: none !important; }
     body.login form p.forgetmenot label { color: var(--fg-muted) !important; font-size: 13px !important; text-transform: none !important; letter-spacing: 0 !important; }
+    body.login .login-username,
+    body.login .login-password,
+    body.login .login-email,
+    body.login .login-remember,
+    body.login .login-submit,
+    body.login .user-pass-wrap,
+    body.login .forgetmenot { margin-bottom: 18px !important; }
+    body.login .login-username label,
+    body.login .login-password label,
+    body.login .login-email label { display: block !important; margin-bottom: 6px !important; }
+    body.login #nav, body.login #backtoblog { margin-top: 16px !important; }
+    body.login .privacy-policy-page-link { margin-top: 20px !important; }
     </style>
     <?php
 } );
