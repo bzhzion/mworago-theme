@@ -618,7 +618,16 @@ add_action( 'login_enqueue_scripts', function() {
     body.login input[type=checkbox] { accent-color: var(--accent) !important; }
     body.login .dashicons-visibility,
     body.login .dashicons-hidden { color: var(--fg-muted) !important; }
-    body.login h1, body.login #login_error, body.login .message,
+    body.login h1 { padding-top: 32px !important; }
+    body.login #login_error,
+    body.login .message {
+        background: var(--surface) !important;
+        border: 1px solid var(--border) !important;
+        border-left: 4px solid var(--accent) !important;
+        border-radius: 8px !important;
+        color: var(--fg-sec) !important;
+        box-shadow: none !important;
+    }
     body.login .login-action-register #login h1 + p { color: var(--fg-sec) !important; }
     body.login p#nav, body.login p#backtoblog { background: none !important; }
     body.login .language-switcher { display: none !important; }
