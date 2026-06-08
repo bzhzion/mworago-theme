@@ -489,6 +489,29 @@ class mworago_Nav_Walker extends Walker_Nav_Menu {
     }
 }
 
+// ── LOGIN PAGE — Logo personnalisé ───────────────────────────────────────────
+
+add_action( 'login_enqueue_scripts', function() {
+    $logo_id  = get_theme_mod( 'custom_logo' );
+    $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'full' ) : null;
+    if ( ! $logo_url ) return;
+    ?>
+    <style>
+    #login h1 a {
+        background-image: url('<?php echo esc_url( $logo_url ); ?>') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        width: 200px !important;
+        height: 60px !important;
+    }
+    </style>
+    <?php
+} );
+
+add_filter( 'login_headerurl', fn() => home_url( '/' ) );
+add_filter( 'login_headertext', fn() => get_bloginfo( 'name' ) );
+
 // ── AUTO-UPDATE — GitHub Releases ─────────────────────────────────────────────
 
 add_filter( 'pre_set_site_transient_update_themes', 'mworago_check_theme_update' );
