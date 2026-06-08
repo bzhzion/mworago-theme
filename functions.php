@@ -503,14 +503,18 @@ function mworago_check_theme_update( $transient ) {
     if ( false === $release ) {
         $response = wp_remote_get( 'https://api.github.com/repos/bzhzion/mworago-theme/releases/latest', [
             'timeout' => 10,
-            'headers' => [ 'User-Agent' => 'mworago-theme-updater' ],
+            'headers' => [
+                'User-Agent'    => 'mworago-theme-updater',
+                'Cache-Control' => 'no-cache, no-store',
+                'Pragma'        => 'no-cache',
+            ],
         ] );
         if ( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
             set_transient( $transient_key, [ 'tag_name' => $current_ver ], HOUR_IN_SECONDS );
             return $transient;
         }
         $release = json_decode( wp_remote_retrieve_body( $response ), true );
-        set_transient( $transient_key, $release, 12 * HOUR_IN_SECONDS );
+        set_transient( $transient_key, $release, HOUR_IN_SECONDS );
     }
 
     $latest_ver = ltrim( $release['tag_name'] ?? '', 'v' );
@@ -519,7 +523,7 @@ function mworago_check_theme_update( $transient ) {
             'theme'       => $theme_slug,
             'new_version' => $latest_ver,
             'url'         => 'https://github.com/bzhzion/mworago-theme',
-            'package'     => 'https://github.com/bzhzion/mworago-theme/releases/latest/download/mworago-theme.zip',
+            'package'     => 'https://github.com/bzhzion/mworago-theme/releases/download/v' . $latest_ver . '/mworago-theme.zip',
         ];
     }
 
