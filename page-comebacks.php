@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Comebacks
  * Template Post Type: page

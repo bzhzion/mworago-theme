@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * mworago 2026 — Fallback index.php (requis par WordPress)
  * Redirige vers front-page.php ou archive selon le contexte.

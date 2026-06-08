@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Top Charts K-pop
  * Template Post Type: page

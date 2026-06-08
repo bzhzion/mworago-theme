@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Dramas — Calendrier
  * Template Post Type: page

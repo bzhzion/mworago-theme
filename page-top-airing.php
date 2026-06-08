@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Template Name: Top Airing Dramas
  * Template Post Type: page

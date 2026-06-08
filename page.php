@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * mworago 2026 — page.php (pages statiques)
  * Même mise en page que single.php

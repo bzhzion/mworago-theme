@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * mworago 2026 — Homepage (front-page.php)
  */

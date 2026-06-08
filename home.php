@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * mworago 2026 — home.php (blog posts listing / page des actualités)
  * Utilisé quand page_for_posts est défini et show_on_front = page.
