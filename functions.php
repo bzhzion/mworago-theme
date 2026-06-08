@@ -494,17 +494,128 @@ class mworago_Nav_Walker extends Walker_Nav_Menu {
 add_action( 'login_enqueue_scripts', function() {
     $logo_id  = get_theme_mod( 'custom_logo' );
     $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'full' ) : null;
-    if ( ! $logo_url ) return;
+    $font_url = get_stylesheet_directory_uri() . '/assets/fonts/dm-sans-normal-latin.woff2';
     ?>
     <style>
-    #login h1 a {
+    @font-face {
+        font-family: 'DM Sans';
+        src: url('<?php echo esc_url( $font_url ); ?>') format('woff2');
+        font-weight: 400 700;
+        font-display: swap;
+    }
+    :root {
+        --pink: #e91e8c;
+        --pink-hover: #c4177a;
+        --pink-muted: rgba(233,30,140,.1);
+        --bg: #0f0f0f;
+        --surface: #1a1a1a;
+        --border: #2a2a2a;
+        --fg: #e5e5e5;
+        --fg-muted: #888;
+        --r: 10px;
+    }
+    body.login {
+        background: var(--bg) !important;
+        font-family: 'DM Sans', sans-serif !important;
+    }
+    body.login #login {
+        padding: 0 !important;
+        width: 380px !important;
+    }
+    body.login #login h1 a {
+        <?php if ( $logo_url ) : ?>
         background-image: url('<?php echo esc_url( $logo_url ); ?>') !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
-        width: 200px !important;
-        height: 60px !important;
+        width: 180px !important;
+        height: 56px !important;
+        <?php else : ?>
+        background-image: none !important;
+        text-indent: 0 !important;
+        color: var(--fg) !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        width: auto !important;
+        height: auto !important;
+        <?php endif; ?>
     }
+    body.login #loginform,
+    body.login #registerform,
+    body.login #lostpasswordform {
+        background: var(--surface) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: var(--r) !important;
+        box-shadow: 0 8px 32px rgba(0,0,0,.4) !important;
+        padding: 28px 32px !important;
+    }
+    body.login .login-action-lostpassword #loginform,
+    body.login #lostpasswordform { margin-top: 0 !important; }
+    body.login label {
+        color: var(--fg-muted) !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        letter-spacing: .04em !important;
+        text-transform: uppercase !important;
+    }
+    body.login input[type=text],
+    body.login input[type=password],
+    body.login input[type=email] {
+        background: var(--bg) !important;
+        border: 1.5px solid var(--border) !important;
+        border-radius: 8px !important;
+        color: var(--fg) !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 14px !important;
+        padding: 10px 14px !important;
+        box-shadow: none !important;
+        transition: border-color .2s !important;
+    }
+    body.login input[type=text]:focus,
+    body.login input[type=password]:focus,
+    body.login input[type=email]:focus {
+        border-color: var(--pink) !important;
+        box-shadow: 0 0 0 3px var(--pink-muted) !important;
+        outline: none !important;
+    }
+    body.login .button-primary {
+        background: var(--pink) !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: #fff !important;
+        font-family: 'DM Sans', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        letter-spacing: .03em !important;
+        padding: 10px 0 !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: background .2s, transform .1s !important;
+    }
+    body.login .button-primary:hover {
+        background: var(--pink-hover) !important;
+        transform: translateY(-1px) !important;
+    }
+    body.login #nav, body.login #backtoblog {
+        text-align: center !important;
+    }
+    body.login #nav a, body.login #backtoblog a {
+        color: var(--fg-muted) !important;
+        font-size: 13px !important;
+        transition: color .2s !important;
+    }
+    body.login #nav a:hover, body.login #backtoblog a:hover {
+        color: var(--pink) !important;
+    }
+    body.login .privacy-policy-page-link a {
+        color: var(--fg-muted) !important;
+        font-size: 12px !important;
+    }
+    body.login input[type=checkbox] { accent-color: var(--pink) !important; }
+    body.login .dashicons-visibility,
+    body.login .dashicons-hidden { color: var(--fg-muted) !important; }
     </style>
     <?php
 } );
