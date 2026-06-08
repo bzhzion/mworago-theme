@@ -488,3 +488,40 @@ class mworago_Nav_Walker extends Walker_Nav_Menu {
         }
     }
 }
+
+// ── AUTO-UPDATE — GitHub Releases ─────────────────────────────────────────────
+
+add_filter( 'pre_set_site_transient_update_themes', 'mworago_check_theme_update' );
+function mworago_check_theme_update( $transient ) {
+    if ( empty( $transient->checked ) ) return $transient;
+
+    $theme_slug    = get_option( 'stylesheet' );
+    $current_ver   = wp_get_theme()->get( 'Version' );
+    $transient_key = 'mworago_github_release';
+
+    $release = get_transient( $transient_key );
+    if ( false === $release ) {
+        $response = wp_remote_get( 'https://api.github.com/repos/bzhzion/mworago-theme/releases/latest', [
+            'timeout' => 10,
+            'headers' => [ 'User-Agent' => 'mworago-theme-updater' ],
+        ] );
+        if ( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
+            set_transient( $transient_key, [ 'tag_name' => $current_ver ], HOUR_IN_SECONDS );
+            return $transient;
+        }
+        $release = json_decode( wp_remote_retrieve_body( $response ), true );
+        set_transient( $transient_key, $release, 12 * HOUR_IN_SECONDS );
+    }
+
+    $latest_ver = ltrim( $release['tag_name'] ?? '', 'v' );
+    if ( version_compare( $latest_ver, $current_ver, '>' ) ) {
+        $transient->response[ $theme_slug ] = [
+            'theme'       => $theme_slug,
+            'new_version' => $latest_ver,
+            'url'         => 'https://github.com/bzhzion/mworago-theme',
+            'package'     => 'https://github.com/bzhzion/mworago-theme/releases/latest/download/mworago-theme.zip',
+        ];
+    }
+
+    return $transient;
+}
