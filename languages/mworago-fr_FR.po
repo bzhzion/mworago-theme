@@ -189,3 +189,12 @@ msgstr "Commentaires plus anciens"
 
 msgid "Newer comments"
 msgstr "Commentaires plus récents"
+
+msgid "Log in"
+msgstr "Se connecter"
+
+msgid "Register"
+msgstr "S'inscrire"
+
+msgid "Mon compte"
+msgstr "Mon compte"

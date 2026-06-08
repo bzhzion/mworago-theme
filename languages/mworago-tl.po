@@ -212,3 +212,12 @@ msgstr "I-install ang app"
 
 msgid "Sign in"
 msgstr "Mag-sign in"
+
+msgid "Log in"
+msgstr "Mag-login"
+
+msgid "Register"
+msgstr "Mag-register"
+
+msgid "Mon compte"
+msgstr "Aking account"

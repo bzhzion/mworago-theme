@@ -208,3 +208,12 @@ msgstr "앱 설치하기"
 
 msgid "Sign in"
 msgstr "로그인"
+
+msgid "Log in"
+msgstr "로그인"
+
+msgid "Register"
+msgstr "회원가입"
+
+msgid "Mon compte"
+msgstr "내 계정"

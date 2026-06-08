@@ -208,3 +208,12 @@ msgstr "Instal aplikasi"
 
 msgid "Sign in"
 msgstr "Masuk"
+
+msgid "Log in"
+msgstr "Masuk"
+
+msgid "Register"
+msgstr "Daftar"
+
+msgid "Mon compte"
+msgstr "Akun saya"

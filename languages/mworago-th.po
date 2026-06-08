@@ -208,3 +208,12 @@ msgstr "ติดตั้งแอป"
 
 msgid "Sign in"
 msgstr "เข้าสู่ระบบ"
+
+msgid "Log in"
+msgstr "เข้าสู่ระบบ"
+
+msgid "Register"
+msgstr "สมัครสมาชิก"
+
+msgid "Mon compte"
+msgstr "บัญชีของฉัน"

@@ -128,6 +128,17 @@ if ( ! empty( $breaking_posts ) ) :
         </svg>
       </button>
 
+      <?php if ( is_user_logged_in() ) : ?>
+        <a href="<?php echo esc_url( admin_url( 'profile.php' ) ); ?>" class="header-avatar" aria-label="<?php esc_attr_e( 'Mon compte', 'mworago' ); ?>">
+          <?php echo get_avatar( get_current_user_id(), 32, '', '', [ 'class' => 'header-avatar__img' ] ); ?>
+        </a>
+      <?php else : ?>
+        <?php if ( get_option( 'users_can_register' ) ) : ?>
+          <a href="<?php echo esc_url( wp_registration_url() ); ?>" class="btn-auth btn-auth--register"><?php esc_html_e( 'Register', 'mworago' ); ?></a>
+        <?php endif; ?>
+        <a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" class="btn-auth btn-auth--login"><?php esc_html_e( 'Log in', 'mworago' ); ?></a>
+      <?php endif; ?>
+
       <?php
       $support_url   = get_theme_mod( 'mworago_support_url', '' ) ?: get_permalink( get_page_by_path( 'soutenir' ) );
       $support_label = get_theme_mod( 'mworago_support_label', __( 'Nous soutenir', 'mworago' ) );
@@ -163,6 +174,19 @@ if ( ! empty( $breaking_posts ) ) :
       'fallback_cb'    => false,
     ] );
     ?>
+    <div class="mobile-nav__auth">
+      <?php if ( is_user_logged_in() ) : ?>
+        <a href="<?php echo esc_url( admin_url( 'profile.php' ) ); ?>" class="mobile-nav__auth-link">
+          <?php echo get_avatar( get_current_user_id(), 24, '', '', [ 'class' => 'header-avatar__img' ] ); ?>
+          <?php esc_html_e( 'Mon compte', 'mworago' ); ?>
+        </a>
+      <?php else : ?>
+        <?php if ( get_option( 'users_can_register' ) ) : ?>
+          <a href="<?php echo esc_url( wp_registration_url() ); ?>" class="mobile-nav__auth-link"><?php esc_html_e( 'Register', 'mworago' ); ?></a>
+        <?php endif; ?>
+        <a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" class="mobile-nav__auth-link"><?php esc_html_e( 'Log in', 'mworago' ); ?></a>
+      <?php endif; ?>
+    </div>
   </div>
 </div>
 <div class="mobile-nav__overlay" id="mobileOverlay"></div>

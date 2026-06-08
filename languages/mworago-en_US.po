@@ -212,3 +212,12 @@ msgstr "Install the app"
 
 msgid "Sign in"
 msgstr "Sign in"
+
+msgid "Log in"
+msgstr "Log in"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Mon compte"
+msgstr "My account"

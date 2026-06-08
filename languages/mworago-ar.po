@@ -212,3 +212,12 @@ msgstr "تثبيت التطبيق"
 
 msgid "Sign in"
 msgstr "تسجيل الدخول"
+
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+msgid "Register"
+msgstr "إنشاء حساب"
+
+msgid "Mon compte"
+msgstr "حسابي"

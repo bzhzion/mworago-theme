@@ -311,6 +311,31 @@
       box-shadow: 0 6px 20px var(--pink-glow);
     }
 
+    .btn-auth {
+      display: inline-flex; align-items: center;
+      padding: var(--sp-sm) var(--sp-md);
+      border-radius: var(--r-full);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600; font-size: 12px; letter-spacing: 0.03em;
+      white-space: nowrap;
+      transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .btn-auth--login {
+      border: 1.5px solid var(--border);
+      color: var(--fg);
+      background: transparent;
+    }
+    .btn-auth--login:hover { border-color: var(--pink); color: var(--pink); }
+    .btn-auth--register {
+      background: var(--pink-muted);
+      color: var(--pink-text);
+      border: 1.5px solid transparent;
+    }
+    .btn-auth--register:hover { background: var(--pink); color: var(--on-accent); }
+
+    .header-avatar { display: inline-flex; align-items: center; }
+    .header-avatar__img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+
     /* ─── BREAKING BAR ─── */
     .breaking {
       background: var(--pink-text); color: #fff;
@@ -1644,9 +1669,22 @@
       border-bottom: 1px solid var(--border);
       padding: var(--sp-sm) var(--sp-sm);
     }
+    .mobile-nav__auth {
+      display: flex; gap: var(--sp-sm); padding-top: var(--sp-lg);
+      border-top: 1px solid var(--border); margin-top: var(--sp-md);
+    }
+    .mobile-nav__auth-link {
+      display: inline-flex; align-items: center; gap: var(--sp-xs);
+      padding: var(--sp-sm) var(--sp-md);
+      border-radius: var(--r-full);
+      font-size: 13px; font-weight: 600;
+      border: 1.5px solid var(--border);
+      color: var(--fg);
+    }
+    .mobile-nav__auth-link:hover { border-color: var(--pink); color: var(--pink); }
 
     @media (max-width: 768px) {
-      .nav, .search, .btn-support { display: none; }
+      .nav, .search, .btn-support, .btn-auth, .header-avatar { display: none; }
       .burger {
         display: flex; flex-direction: column; justify-content: space-between;
         width: 24px; height: 18px;

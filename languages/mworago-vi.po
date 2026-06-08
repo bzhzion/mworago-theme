@@ -208,3 +208,12 @@ msgstr "Cài đặt ứng dụng"
 
 msgid "Sign in"
 msgstr "Đăng nhập"
+
+msgid "Log in"
+msgstr "Đăng nhập"
+
+msgid "Register"
+msgstr "Đăng ký"
+
+msgid "Mon compte"
+msgstr "Tài khoản của tôi"
