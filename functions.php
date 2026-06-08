@@ -504,15 +504,17 @@ add_action( 'login_enqueue_scripts', function() {
         font-display: swap;
     }
     :root {
-        --pink: #e91e8c;
-        --pink-hover: #c4177a;
-        --pink-muted: rgba(233,30,140,.1);
-        --bg: #0f0f0f;
-        --surface: #1a1a1a;
-        --border: #2a2a2a;
-        --fg: #e5e5e5;
-        --fg-muted: #888;
-        --r: 10px;
+        --accent:      #8B5CF6;
+        --accent-hover:#2DD4BF;
+        --accent-muted:rgba(139,92,246,.12);
+        --bg:          #080412;
+        --surface:     #12082A;
+        --surface2:    #1C1038;
+        --border:      rgba(255,255,255,.07);
+        --fg:          #FFFFFF;
+        --fg-sec:      #C4B5FD;
+        --fg-muted:    #A78BFA;
+        --r:           16px;
     }
     body.login {
         background: var(--bg) !important;
@@ -575,12 +577,12 @@ add_action( 'login_enqueue_scripts', function() {
     body.login input[type=text]:focus,
     body.login input[type=password]:focus,
     body.login input[type=email]:focus {
-        border-color: var(--pink) !important;
-        box-shadow: 0 0 0 3px var(--pink-muted) !important;
+        border-color: var(--accent) !important;
+        box-shadow: 0 0 0 3px var(--accent-muted) !important;
         outline: none !important;
     }
     body.login .button-primary {
-        background: var(--pink) !important;
+        background: var(--accent) !important;
         border: none !important;
         border-radius: 8px !important;
         color: #fff !important;
@@ -595,7 +597,7 @@ add_action( 'login_enqueue_scripts', function() {
         transition: background .2s, transform .1s !important;
     }
     body.login .button-primary:hover {
-        background: var(--pink-hover) !important;
+        background: var(--accent-hover) !important;
         transform: translateY(-1px) !important;
     }
     body.login #nav, body.login #backtoblog {
@@ -607,15 +609,20 @@ add_action( 'login_enqueue_scripts', function() {
         transition: color .2s !important;
     }
     body.login #nav a:hover, body.login #backtoblog a:hover {
-        color: var(--pink) !important;
+        color: var(--accent) !important;
     }
     body.login .privacy-policy-page-link a {
         color: var(--fg-muted) !important;
         font-size: 12px !important;
     }
-    body.login input[type=checkbox] { accent-color: var(--pink) !important; }
+    body.login input[type=checkbox] { accent-color: var(--accent) !important; }
     body.login .dashicons-visibility,
     body.login .dashicons-hidden { color: var(--fg-muted) !important; }
+    body.login h1, body.login #login_error, body.login .message,
+    body.login .login-action-register #login h1 + p { color: var(--fg-sec) !important; }
+    body.login p#nav, body.login p#backtoblog { background: none !important; }
+    body.login .language-switcher { display: none !important; }
+    body.login form p.forgetmenot label { color: var(--fg-muted) !important; font-size: 13px !important; text-transform: none !important; letter-spacing: 0 !important; }
     </style>
     <?php
 } );
