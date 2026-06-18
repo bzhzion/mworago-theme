@@ -1054,7 +1054,7 @@
 
     /* Bio auteur */
     .author-bio {
-      display: flex; align-items: flex-start; gap: var(--sp-lg);
+      display: flex; align-items: center; gap: var(--sp-lg);
       padding: var(--sp-xl);
       background: var(--bg-card);
       border: 1px solid var(--border);
