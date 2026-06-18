@@ -27,9 +27,12 @@ jobs:
             --exclude "mworago-theme/.git*" \
             --exclude "mworago-theme/.github/*" \
             --exclude "mworago-theme/dist/*"
+          sha256sum "$GITHUB_WORKSPACE/dist/mworago-theme.zip" | awk '{print $1}' > "$GITHUB_WORKSPACE/dist/mworago-theme.zip.sha256"
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/mworago-theme.zip
+          files: |
+            dist/mworago-theme.zip
+            dist/mworago-theme.zip.sha256
           generate_release_notes: false
