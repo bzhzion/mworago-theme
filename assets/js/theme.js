@@ -1,4 +1,4 @@
-﻿  // ── DARK MODE ──────────────────────────────────────────────────────────────
+  // ── DARK MODE ──────────────────────────────────────────────────────────────
   const html      = document.documentElement;
   const toggle    = document.getElementById('themeToggle');
   const icoSun    = document.getElementById('ico-sun');
