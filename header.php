@@ -32,16 +32,20 @@
 <!-- BREAKING NEWS BAR -->
 <?php
 global $wpdb;
-$breaking_posts = $wpdb->get_results(
-  "SELECT p.ID, p.post_title, SUM(s.pageviews) AS views
-   FROM {$wpdb->prefix}popularpostssummary s
-   INNER JOIN {$wpdb->posts} p ON p.ID = s.postid
-   WHERE p.post_status = 'publish' AND p.post_type = 'post'
-     AND s.view_date >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)
-   GROUP BY p.ID
-   ORDER BY views DESC
-   LIMIT 5"
-);
+$breaking_posts = [];
+$wpp_table = $wpdb->prefix . 'popularpostssummary';
+if ( $wpdb->get_var( "SHOW TABLES LIKE '$wpp_table'" ) === $wpp_table ) {
+  $breaking_posts = $wpdb->get_results(
+    "SELECT p.ID, p.post_title, SUM(s.pageviews) AS views
+     FROM {$wpp_table} s
+     INNER JOIN {$wpdb->posts} p ON p.ID = s.postid
+     WHERE p.post_status = 'publish' AND p.post_type = 'post'
+       AND s.view_date >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)
+     GROUP BY p.ID
+     ORDER BY views DESC
+     LIMIT 5"
+  );
+}
 if ( empty( $breaking_posts ) ) {
   $breaking_posts = $wpdb->get_results(
     "SELECT ID, post_title FROM {$wpdb->posts}
