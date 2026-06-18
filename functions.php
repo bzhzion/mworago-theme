@@ -323,7 +323,7 @@ function mworago_paywall_html() {
 
     // Aperçu : excerpt ou premiers 80 mots
     if ( ! empty( $post->post_excerpt ) ) {
-        $preview = wpautop( wp_trim_words( $post->post_excerpt, 80 ) );
+        $preview = wpautop( wp_trim_words( wp_strip_all_tags( $post->post_excerpt ), 80 ) );
     } else {
         $words = preg_split( '/\s+/u', trim( wp_strip_all_tags( $post->post_content ) ) );
         $preview = wpautop( implode( ' ', array_slice( $words, 0, 80 ) ) . '…' );

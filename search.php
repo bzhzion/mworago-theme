@@ -22,7 +22,7 @@ $total = $wp_query->found_posts;
         <?php
         if ( $total > 0 ) {
             printf(
-              _n( '%d result found', '%d results found', $total, 'mworago' ),
+              esc_html( _n( '%d result found', '%d results found', $total, 'mworago' ) ),
               $total
             );
         } else {

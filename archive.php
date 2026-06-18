@@ -32,7 +32,7 @@ get_header();
           <?php
           global $wp_query;
           printf(
-            _n( '%d article', '%d articles', $wp_query->found_posts, 'mworago' ),
+            esc_html( _n( '%d article', '%d articles', $wp_query->found_posts, 'mworago' ) ),
             $wp_query->found_posts
           );
           ?>

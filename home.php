@@ -25,7 +25,7 @@ global $wp_query;
       <p class="archive-header__count">
         <?php
         printf(
-          _n( '%d article', '%d articles', $wp_query->found_posts, 'mworago' ),
+          esc_html( _n( '%d article', '%d articles', $wp_query->found_posts, 'mworago' ) ),
           $wp_query->found_posts
         );
         ?>
