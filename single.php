@@ -109,6 +109,24 @@ the_post();
       </div>
       <?php endif; ?>
 
+      <!-- BIO AUTEUR -->
+      <?php
+      $author_bio = get_the_author_meta( 'description' );
+      if ( $author_bio ) :
+        $author_id     = get_the_author_meta( 'ID' );
+        $author_url    = get_author_posts_url( $author_id );
+        $author_name   = get_the_author();
+        $author_avatar = get_avatar( $author_id, 64, '', $author_name, [ 'class' => 'author-bio__avatar' ] );
+      ?>
+      <div class="author-bio">
+        <?php echo $author_avatar; ?>
+        <div class="author-bio__content">
+          <a href="<?php echo esc_url( $author_url ); ?>" class="author-bio__name"><?php echo esc_html( $author_name ); ?></a>
+          <p class="author-bio__desc"><?php echo esc_html( $author_bio ); ?></p>
+        </div>
+      </div>
+      <?php endif; ?>
+
       <!-- PARTAGE -->
       <div class="single-share">
         <span class="single-share__label"><?php esc_html_e( 'Share', 'mworago' ); ?></span>
