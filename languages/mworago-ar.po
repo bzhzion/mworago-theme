@@ -1,4 +1,4 @@
-﻿# mworago 2026 — الترجمة العربية
+# mworago 2026 — الترجمة العربية
 # Copyright (C) 2026 mworago
 # Locale: ar
 msgid ""

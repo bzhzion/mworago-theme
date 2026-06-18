@@ -1,4 +1,4 @@
-﻿# mworago 2026 — 한국어 번역
+# mworago 2026 — 한국어 번역
 # Copyright (C) 2026 mworago
 # Locale: ko_KR
 msgid ""

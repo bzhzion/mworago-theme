@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Terjemahan Bahasa Melayu
+# mworago 2026 — Terjemahan Bahasa Melayu
 # Copyright (C) 2026 mworago
 # Locale: ms_MY
 msgid ""

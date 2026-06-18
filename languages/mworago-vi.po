@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Bản dịch tiếng Việt
+# mworago 2026 — Bản dịch tiếng Việt
 # Copyright (C) 2026 mworago
 # Locale: vi
 msgid ""

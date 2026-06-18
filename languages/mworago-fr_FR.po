@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Traduction française (strings anglais uniquement)
+# mworago 2026 — Traduction française (strings anglais uniquement)
 # Copyright (C) 2026 mworago
 # Locale: fr_FR
 msgid ""

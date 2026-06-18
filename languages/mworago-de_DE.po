@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Deutsche Übersetzung
+# mworago 2026 — Deutsche Übersetzung
 # Copyright (C) 2026 mworago
 # Locale: de_DE
 msgid ""

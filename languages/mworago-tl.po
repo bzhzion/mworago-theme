@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Tagalog na pagsasalin
+# mworago 2026 — Tagalog na pagsasalin
 # Copyright (C) 2026 mworago
 # Locale: tl
 msgid ""

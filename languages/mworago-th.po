@@ -1,4 +1,4 @@
-﻿# mworago 2026 — การแปลภาษาไทย
+# mworago 2026 — การแปลภาษาไทย
 # Copyright (C) 2026 mworago
 # Locale: th
 msgid ""

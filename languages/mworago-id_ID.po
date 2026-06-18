@@ -1,4 +1,4 @@
-﻿# mworago 2026 — Terjemahan bahasa Indonesia
+# mworago 2026 — Terjemahan bahasa Indonesia
 # Copyright (C) 2026 mworago
 # Locale: id_ID
 msgid ""
