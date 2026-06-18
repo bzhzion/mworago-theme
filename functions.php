@@ -691,3 +691,25 @@ function mworago_check_theme_update( $transient ) {
 
     return $transient;
 }
+
+add_filter( 'pre_get_avatar_data', function( $args, $id_or_email ) {
+    $user_id = 0;
+    if ( is_numeric( $id_or_email ) ) {
+        $user_id = (int) $id_or_email;
+    } elseif ( $id_or_email instanceof WP_User ) {
+        $user_id = $id_or_email->ID;
+    } elseif ( $id_or_email instanceof WP_Comment ) {
+        $user_id = (int) $id_or_email->user_id;
+    }
+    if ( ! $user_id ) return $args;
+
+    $attachment_id = get_user_meta( $user_id, 'wp_user_avatar', true );
+    if ( ! $attachment_id ) return $args;
+
+    $url = wp_get_attachment_image_url( $attachment_id, 'thumbnail' );
+    if ( ! $url ) return $args;
+
+    $args['url']   = $url;
+    $args['found_avatar'] = true;
+    return $args;
+}, 10, 2 );
