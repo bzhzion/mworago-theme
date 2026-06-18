@@ -3,3 +3,4 @@
 *.css text eol=lf working-tree-encoding=UTF-8
 *.js  text eol=lf working-tree-encoding=UTF-8
 *.po  text eol=lf working-tree-encoding=UTF-8
+.githooks/* text eol=lf
