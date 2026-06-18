@@ -22,10 +22,11 @@ jobs:
       - name: Create zip
         run: |
           mkdir -p dist
-          zip -r dist/mworago-theme.zip . \
-            --exclude "*.git*" \
-            --exclude ".github/*" \
-            --exclude "dist/*"
+          cd ..
+          zip -r "$GITHUB_WORKSPACE/dist/mworago-theme.zip" mworago-theme \
+            --exclude "mworago-theme/.git*" \
+            --exclude "mworago-theme/.github/*" \
+            --exclude "mworago-theme/dist/*"
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
