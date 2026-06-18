@@ -715,3 +715,83 @@ add_filter( 'pre_get_avatar_data', function( $args, $id_or_email ) {
     $args['found_avatar'] = true;
     return $args;
 }, 10, 2 );
+
+// ── SÉCURITÉ — Headers HTTP (M1) ─────────────────────────────────────────────
+
+add_action( 'send_headers', function() {
+    if ( headers_sent() ) return;
+    header( 'X-Frame-Options: SAMEORIGIN' );
+    header( 'X-Content-Type-Options: nosniff' );
+    header( 'Referrer-Policy: strict-origin-when-cross-origin' );
+} );
+
+// ── SÉCURITÉ — Bloquer l'énumération d'auteurs par ID numérique (M2) ─────────
+
+add_action( 'template_redirect', function() {
+    if ( is_admin() ) return;
+    if ( ! isset( $_SERVER['QUERY_STRING'] ) ) return;
+    if ( ! preg_match( '/\bauthor=\d+\b/', $_SERVER['QUERY_STRING'] ) ) return;
+    $author = get_queried_object();
+    if ( $author instanceof WP_User ) {
+        wp_redirect( get_author_posts_url( $author->ID, $author->user_nicename ), 301 );
+    } else {
+        wp_redirect( home_url( '/' ), 302 );
+    }
+    exit;
+} );
+
+// ── SÉCURITÉ — Vérification du paquet thème après téléchargement (H2) ────────
+
+add_filter( 'upgrader_source_selection', function( $source, $remote_source, $upgrader, $args ) {
+    if ( ! isset( $args['hook_extra']['theme'] ) || $args['hook_extra']['theme'] !== get_option( 'stylesheet' ) ) {
+        return $source;
+    }
+    $style_css = trailingslashit( $source ) . 'style.css';
+    if ( ! file_exists( $style_css ) ) {
+        return new WP_Error( 'mworago_update_invalid', __( 'Paquet thème invalide : style.css manquant.', 'mworago' ) );
+    }
+    $theme_data = get_file_data( $style_css, [ 'Theme Name' => 'Theme Name' ] );
+    if ( $theme_data['Theme Name'] !== 'mworago 2026' ) {
+        return new WP_Error( 'mworago_update_invalid', __( 'Paquet thème invalide : nom incorrect.', 'mworago' ) );
+    }
+    return $source;
+}, 10, 4 );
+
+// ── SÉCURITÉ — Allowlist d'URLs pour les templates calendrier (H1) ────────────
+
+function mworago_safe_url( string $url, array $extra_hosts = [] ): string {
+    static $default_hosts = [
+        'youtube.com', 'youtu.be',
+        'open.spotify.com',
+        'music.apple.com', 'tv.apple.com',
+        'music.bugs.co.kr', 'bugs.co.kr',
+        'genie.co.kr',
+        'music.flo.com',
+        'melon.com',
+        'vibe.naver.com',
+        'tidal.com',
+        'deezer.com',
+        'music.amazon.com',
+        'netflix.com',
+        'viki.com',
+        'wavve.com',
+        'tving.com',
+        'mydramalist.com',
+        'asianwiki.com',
+        'disneyplus.com',
+        'mworago.com',
+        'wikipedia.org',
+    ];
+    if ( ! $url ) return '#';
+    $host = wp_parse_url( $url, PHP_URL_HOST );
+    if ( ! $host ) return '#';
+    $host    = strtolower( $host );
+    $allowed = array_merge( $default_hosts, $extra_hosts );
+    foreach ( $allowed as $h ) {
+        $suffix = '.' . $h;
+        if ( $host === $h || substr( $host, -strlen( $suffix ) ) === $suffix ) {
+            return esc_url( $url );
+        }
+    }
+    return '#';
+}

@@ -65,7 +65,7 @@ ksort( $by_date );
 
       <div class="mw-drama-list">
         <?php foreach ( $items as $dr ) : ?>
-        <a href="<?php echo esc_url( $dr['url'] ); ?>" class="mw-drama-item" target="_blank" rel="noopener">
+        <a href="<?php echo mworago_safe_url( $dr['url'] ?? '' ); ?>" class="mw-drama-item" target="_blank" rel="noopener noreferrer">
           <div class="mw-drama-item__img">
             <?php if ( ! empty( $dr['image'] ) ) : ?>
               <img src="<?php echo esc_url( $dr['image'] ); ?>" alt="<?php echo esc_attr( $dr['title'] ); ?>" loading="lazy">

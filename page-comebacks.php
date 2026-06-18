@@ -81,7 +81,7 @@ $type_labels = [
               $type = $cb['type'] ?? '';
               $label = $type_labels[ $type ] ?? ucfirst( $type );
             ?>
-            <a href="<?php echo esc_url( $cb['url'] ); ?>" class="mw-cb-card" target="_blank" rel="noopener">
+            <a href="<?php echo mworago_safe_url( $cb['url'] ?? '' ); ?>" class="mw-cb-card" target="_blank" rel="noopener noreferrer">
               <div class="mw-cb-card__img">
                 <?php if ( ! empty( $cb['image'] ) ) : ?>
                   <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ?? '' ); ?>" loading="lazy">
@@ -123,7 +123,7 @@ $type_labels = [
               $type = $cb['type'] ?? '';
               $label = $type_labels[ $type ] ?? ucfirst( $type );
             ?>
-            <a href="<?php echo esc_url( $cb['url'] ); ?>" class="mw-cb-card mw-cb-card--past" target="_blank" rel="noopener">
+            <a href="<?php echo mworago_safe_url( $cb['url'] ?? '' ); ?>" class="mw-cb-card mw-cb-card--past" target="_blank" rel="noopener noreferrer">
               <div class="mw-cb-card__img">
                 <?php if ( ! empty( $cb['image'] ) ) : ?>
                   <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ?? '' ); ?>" loading="lazy">
