@@ -49,29 +49,35 @@ function mworago_format_views( $n ) {
   <div class="mw-charts-list">
     <?php $mw_chart_i = 0; foreach ( $items as $item ) :
       $mw_chart_i++;
-      $yt_url = 'https://www.youtube.com/watch?v=' . $item['videoId'];
+      $raw_vid = $item['videoId'] ?? '';
+      $video_id = preg_match( '/^[A-Za-z0-9_-]{11}$/', $raw_vid ) ? $raw_vid : '';
+      $yt_url   = $video_id ? 'https://www.youtube.com/watch?v=' . $video_id : '#';
+      $title    = $item['title']    ?? '';
+      $artist   = $item['artist']   ?? '';
+      $rank     = $item['rank']     ?? '';
+      $views    = (int) ( $item['viewCount'] ?? 0 );
     ?>
     <a href="<?php echo esc_url( $yt_url ); ?>" class="mw-chart-item" target="_blank" rel="noopener">
       <div class="mw-chart-item__rank">
-        <?php echo esc_html( $item['rank'] ); ?>
+        <?php echo esc_html( $rank ); ?>
       </div>
       <div class="mw-chart-item__thumb">
         <?php if ( ! empty( $item['image'] ) ) : ?>
-          <img src="<?php echo esc_url( $item['image'] ); ?>" alt="<?php echo esc_attr( $item['title'] ); ?>" loading="lazy">
-        <?php else : ?>
-          <img src="https://img.youtube.com/vi/<?php echo esc_attr( $item['videoId'] ); ?>/mqdefault.jpg" alt="<?php echo esc_attr( $item['title'] ); ?>" loading="lazy">
+          <img src="<?php echo esc_url( $item['image'] ); ?>" alt="<?php echo esc_attr( $title ); ?>" loading="lazy">
+        <?php elseif ( $video_id ) : ?>
+          <img src="https://img.youtube.com/vi/<?php echo esc_attr( $video_id ); ?>/mqdefault.jpg" alt="<?php echo esc_attr( $title ); ?>" loading="lazy">
         <?php endif; ?>
         <?php if ( ! empty( $item['isMV'] ) ) : ?>
           <span class="mw-chart-item__mv-badge">MV</span>
         <?php endif; ?>
       </div>
       <div class="mw-chart-item__body">
-        <p class="mw-chart-item__title"><?php echo esc_html( $item['title'] ); ?></p>
-        <p class="mw-chart-item__artist"><?php echo esc_html( $item['artist'] ); ?></p>
+        <p class="mw-chart-item__title"><?php echo esc_html( $title ); ?></p>
+        <p class="mw-chart-item__artist"><?php echo esc_html( $artist ); ?></p>
       </div>
       <div class="mw-chart-item__views">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        <?php echo esc_html( mworago_format_views( $item['viewCount'] ) ); ?>
+        <?php echo esc_html( mworago_format_views( $views ) ); ?>
       </div>
     </a>
     <?php if ( $mw_chart_i % 10 === 0 ) mworago_ad( 'mworago_ad_grid' ); ?>

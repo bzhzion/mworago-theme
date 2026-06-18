@@ -28,7 +28,7 @@ $generated = $data['generated'] ?? '';
 $today    = current_time( 'Y-m-d' );
 $by_date  = [];
 foreach ( $comebacks as $cb ) {
-    $by_date[ $cb['date'] ][] = $cb;
+    $by_date[ $cb['date'] ?? '' ][] = $cb;
 }
 ksort( $by_date );
 
@@ -83,18 +83,18 @@ $type_labels = [
             ?>
             <a href="<?php echo esc_url( $cb['url'] ); ?>" class="mw-cb-card" target="_blank" rel="noopener">
               <div class="mw-cb-card__img">
-                <?php if ( $cb['image'] ) : ?>
-                  <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ); ?>" loading="lazy">
+                <?php if ( ! empty( $cb['image'] ) ) : ?>
+                  <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ?? '' ); ?>" loading="lazy">
                 <?php else : ?>
-                  <div class="mw-cb-card__img-placeholder g<?php echo ( abs( crc32( $cb['artist'] ) ) % 7 ) + 1; ?>"></div>
+                  <div class="mw-cb-card__img-placeholder g<?php echo ( abs( crc32( $cb['artist'] ?? '' ) ) % 7 ) + 1; ?>"></div>
                 <?php endif; ?>
                 <?php if ( $label ) : ?>
                   <span class="mw-cb-card__type badge"><?php echo esc_html( $label ); ?></span>
                 <?php endif; ?>
               </div>
               <div class="mw-cb-card__body">
-                <p class="mw-cb-card__artist"><?php echo esc_html( $cb['artist'] ); ?></p>
-                <p class="mw-cb-card__album"><?php echo esc_html( $cb['album'] ); ?></p>
+                <p class="mw-cb-card__artist"><?php echo esc_html( $cb['artist'] ?? '' ); ?></p>
+                <p class="mw-cb-card__album"><?php echo esc_html( $cb['album'] ?? '' ); ?></p>
                 <?php if ( ! empty( $cb['title'] ) && $cb['title'] !== $cb['album'] ) : ?>
                   <p class="mw-cb-card__track"><?php echo esc_html( $cb['title'] ); ?></p>
                 <?php endif; ?>
@@ -125,18 +125,18 @@ $type_labels = [
             ?>
             <a href="<?php echo esc_url( $cb['url'] ); ?>" class="mw-cb-card mw-cb-card--past" target="_blank" rel="noopener">
               <div class="mw-cb-card__img">
-                <?php if ( $cb['image'] ) : ?>
-                  <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ); ?>" loading="lazy">
+                <?php if ( ! empty( $cb['image'] ) ) : ?>
+                  <img src="<?php echo esc_url( $cb['image'] ); ?>" alt="<?php echo esc_attr( $cb['album'] ?? '' ); ?>" loading="lazy">
                 <?php else : ?>
-                  <div class="mw-cb-card__img-placeholder g<?php echo ( abs( crc32( $cb['artist'] ) ) % 7 ) + 1; ?>"></div>
+                  <div class="mw-cb-card__img-placeholder g<?php echo ( abs( crc32( $cb['artist'] ?? '' ) ) % 7 ) + 1; ?>"></div>
                 <?php endif; ?>
                 <?php if ( $label ) : ?>
                   <span class="mw-cb-card__type badge"><?php echo esc_html( $label ); ?></span>
                 <?php endif; ?>
               </div>
               <div class="mw-cb-card__body">
-                <p class="mw-cb-card__artist"><?php echo esc_html( $cb['artist'] ); ?></p>
-                <p class="mw-cb-card__album"><?php echo esc_html( $cb['album'] ); ?></p>
+                <p class="mw-cb-card__artist"><?php echo esc_html( $cb['artist'] ?? '' ); ?></p>
+                <p class="mw-cb-card__album"><?php echo esc_html( $cb['album'] ?? '' ); ?></p>
               </div>
             </a>
             <?php endforeach; ?>

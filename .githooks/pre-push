@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# pre-push : bloque le push si un fichier modifié contient un BOM UTF-8 (EF BB BF)
+
+EXTENSIONS='(\.php|\.css|\.js|\.po|\.html|\.htm|\.json)$'
+
+remote="$1"
+url="$2"
+
+bom_files=()
+
+while IFS=' ' read -r local_ref local_sha remote_ref remote_sha; do
+    # Branche supprimée — on ignore
+    [ "$local_sha" = "0000000000000000000000000000000000000000" ] && continue
+
+    if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+        # Nouvelle branche : tous les fichiers trackés par le dernier commit
+        files=$(git ls-tree -r --name-only "$local_sha")
+    else
+        # Branche existante : fichiers modifiés par les nouveaux commits
+        files=$(git diff --name-only "$remote_sha" "$local_sha")
+    fi
+
+    while IFS= read -r file; do
+        [[ "$file" =~ $EXTENSIONS ]] || continue
+        [ -f "$file" ] || continue
+
+        # Lit les 3 premiers octets et cherche EF BB BF
+        if printf '%s' "$(head -c 3 "$file" | od -An -tx1)" | grep -q 'ef *bb *bf'; then
+            bom_files+=("$file")
+        fi
+    done <<< "$files"
+done
+
+if [ ${#bom_files[@]} -gt 0 ]; then
+    echo ""
+    echo "╔══════════════════════════════════════════════════════════════╗"
+    echo "║  PUSH BLOQUÉ — BOM UTF-8 détecté dans les fichiers suivants ║"
+    echo "╚══════════════════════════════════════════════════════════════╝"
+    for f in "${bom_files[@]}"; do
+        echo "  ✗  $f"
+    done
+    echo ""
+    echo "Correction PowerShell (un fichier) :"
+    echo "  \$f = '${bom_files[0]}'"
+    echo "  [IO.File]::WriteAllText(\$f, [IO.File]::ReadAllText(\$f, [Text.Encoding]::UTF8), (New-Object Text.UTF8Encoding \$false))"
+    echo ""
+    echo "Correction batch (tous les fichiers listés ci-dessus) :"
+    for f in "${bom_files[@]}"; do
+        echo "  [IO.File]::WriteAllText('$f', [IO.File]::ReadAllText('$f', [Text.Encoding]::UTF8), (New-Object Text.UTF8Encoding \$false))"
+    done
+    echo ""
+    exit 1
+fi
+
+exit 0

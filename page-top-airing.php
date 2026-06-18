@@ -48,7 +48,7 @@ $generated = $data['generated'] ?? '';
         <?php if ( ! empty( $show['image'] ) ) : ?>
           <img src="<?php echo esc_url( $show['image'] ); ?>" alt="<?php echo esc_attr( $show['title'] ); ?>" loading="lazy">
         <?php else : ?>
-          <div class="mw-airing-card__img-placeholder g<?php echo ( abs( crc32( $show['title'] ) ) % 7 ) + 1; ?>"></div>
+          <div class="mw-airing-card__img-placeholder g<?php echo ( abs( crc32( $show['title'] ?? '' ) ) % 7 ) + 1; ?>"></div>
         <?php endif; ?>
       </div>
       <div class="mw-airing-card__body">
@@ -62,7 +62,7 @@ $generated = $data['generated'] ?? '';
           <?php endif; ?>
           <?php if ( ! empty( $show['episodes'] ) ) : ?>
             <span class="mw-airing-card__eps">
-              <?php printf( _n( '%d ép.', '%d éps.', $show['episodes'], 'mworago' ), $show['episodes'] ); ?>
+              <?php $eps = (int) ( $show['episodes'] ?? 0 ); printf( esc_html( _n( '%d ép.', '%d éps.', $eps, 'mworago' ) ), $eps ); ?>
             </span>
           <?php endif; ?>
         </div>

@@ -27,7 +27,7 @@ $generated = $data['generated'] ?? '';
 $today   = current_time( 'Y-m-d' );
 $by_date = [];
 foreach ( $dramas as $dr ) {
-    $by_date[ $dr['date'] ][] = $dr;
+    $by_date[ $dr['date'] ?? '' ][] = $dr;
 }
 ksort( $by_date );
 ?>
@@ -70,14 +70,14 @@ ksort( $by_date );
             <?php if ( ! empty( $dr['image'] ) ) : ?>
               <img src="<?php echo esc_url( $dr['image'] ); ?>" alt="<?php echo esc_attr( $dr['title'] ); ?>" loading="lazy">
             <?php else : ?>
-              <div class="mw-drama-item__img-placeholder g<?php echo ( abs( crc32( $dr['title'] ) ) % 7 ) + 1; ?>"></div>
+              <div class="mw-drama-item__img-placeholder g<?php echo ( abs( crc32( $dr['title'] ?? '' ) ) % 7 ) + 1; ?>"></div>
             <?php endif; ?>
           </div>
           <div class="mw-drama-item__body">
             <p class="mw-drama-item__title"><?php echo esc_html( $dr['title'] ); ?></p>
             <div class="mw-drama-item__meta">
               <span class="mw-drama-item__ep">
-                <?php printf( esc_html__( 'Ép. %d', 'mworago' ), $dr['episode'] ); ?>
+                <?php printf( esc_html__( 'Ép. %d', 'mworago' ), (int) ( $dr['episode'] ?? 0 ) ); ?>
               </span>
               <?php if ( ! empty( $dr['time'] ) ) : ?>
                 <span class="mw-drama-item__time"><?php echo esc_html( $dr['time'] ); ?></span>
