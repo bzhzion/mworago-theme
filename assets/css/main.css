@@ -909,13 +909,16 @@
       padding: 0 var(--sp-xl);
     }
 
-    /* Promo app mobile — entre l'image à la une et l'article */
+    /* Promo app mobile — entre l'image à la une et l'article — même gutter que .articles */
+    .app-promo-wrap {
+      max-width: var(--max-w);
+      margin: var(--sp-xl) auto 0;
+      padding: 0 var(--sp-xl);
+    }
     .app-promo {
       display: flex;
       align-items: center;
       gap: var(--sp-lg);
-      max-width: var(--max-w);
-      margin: var(--sp-xl) auto 0;
       padding: var(--sp-lg) var(--sp-xl);
       border-radius: var(--r-lg);
       background: linear-gradient(120deg, var(--pink) 0%, var(--pink-hover) 130%);
@@ -963,6 +966,7 @@
       white-space: nowrap;
     }
     @media (max-width: 640px) {
+      .app-promo-wrap { padding: 0 var(--sp-lg); }
       .app-promo { flex-wrap: wrap; padding: var(--sp-lg); }
       .app-promo__icon { width: 44px; height: 44px; }
       .app-promo__cta { margin-left: calc(44px + var(--sp-lg)); }
