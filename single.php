@@ -34,6 +34,9 @@ the_post();
   </div>
   <?php endif; ?>
 
+  <!-- PROMO APP MOBILE -->
+  <?php mworago_app_promo_banner(); ?>
+
   <!-- ARTICLE -->
   <article class="single-article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="single-article__inner">

@@ -5,6 +5,21 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// ── PROMO APP MOBILE — bandeau entre l'image à la une et l'article ──────────
+function mworago_app_promo_banner() {
+    $app_url = trailingslashit( home_url( '/app/' ) );
+    ?>
+    <a href="<?php echo esc_url( $app_url ); ?>" class="app-promo">
+      <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/app-icon.png' ); ?>" alt="" class="app-promo__icon" width="56" height="56" loading="lazy">
+      <span class="app-promo__text">
+        <strong class="app-promo__title"><?php esc_html_e( "L'app Mworago est arrivée !", 'mworago' ); ?></strong>
+        <span class="app-promo__sub"><?php esc_html_e( 'Toute l’actu K-pop & K-drama dans votre poche — à installer absolument.', 'mworago' ); ?></span>
+      </span>
+      <span class="app-promo__cta"><?php esc_html_e( 'Installer', 'mworago' ); ?>&nbsp;→</span>
+    </a>
+    <?php
+}
+
 // ── ENQUEUE ──────────────────────────────────────────────────────────────────
 add_action( 'wp_enqueue_scripts', 'mworago_enqueue', 20 );
 
