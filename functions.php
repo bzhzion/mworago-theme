@@ -5,6 +5,35 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// ── SANITIZATION DONNÉES SCRAPÉES (comebacks/dramas/top-charts/top-airing) ───
+// esc_html()/esc_attr() protègent du XSS mais pas des caractères Unicode de
+// contrôle/formatage (Cc/Cf : override RTL U+202E, zero-width U+200B...).
+// Ces JSON sont générés par scraping de sources externes (mydramalist, YouTube),
+// donc un champ artist/album/title pourrait contenir un caractère trompeur.
+function mworago_strip_unicode_controls( $value ) {
+    if ( ! is_string( $value ) ) {
+        return $value;
+    }
+    // \p{Cc} (contrôle) et \p{Cf} (formatage, dont les overrides bidi) — on
+    // conserve \n et \t qui sont légitimes dans du texte multi-lignes.
+    $stripped = preg_replace( '/[\p{Cc}\p{Cf}]/u', '', $value );
+    return null === $stripped ? $value : $stripped;
+}
+
+/**
+ * Nettoie récursivement toutes les valeurs string d'un tableau décodé depuis
+ * un JSON scrapé, avant tout affichage. À appeler juste après json_decode().
+ */
+function mworago_sanitize_scraped_data( $data ) {
+    if ( is_array( $data ) ) {
+        foreach ( $data as $key => $value ) {
+            $data[ $key ] = mworago_sanitize_scraped_data( $value );
+        }
+        return $data;
+    }
+    return mworago_strip_unicode_controls( $data );
+}
+
 // ── PROMO APP MOBILE — bandeau entre l'image à la une et l'article ──────────
 function mworago_app_promo_banner() {
     $app_url = trailingslashit( home_url( '/app/' ) );

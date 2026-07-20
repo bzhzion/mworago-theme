@@ -16,7 +16,7 @@ $data      = get_transient( $cache_key );
 if ( false === $data ) {
     $resp = wp_remote_get( $data_url, [ 'timeout' => 10 ] );
     if ( ! is_wp_error( $resp ) && 200 === wp_remote_retrieve_response_code( $resp ) ) {
-        $data = json_decode( wp_remote_retrieve_body( $resp ), true );
+        $data = mworago_sanitize_scraped_data( json_decode( wp_remote_retrieve_body( $resp ), true ) );
         set_transient( $cache_key, $data, HOUR_IN_SECONDS );
     }
 }
