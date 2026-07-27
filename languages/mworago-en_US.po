@@ -221,3 +221,12 @@ msgstr "Register"
 
 msgid "Mon compte"
 msgstr "My account"
+
+msgid "The Mworago app is here!"
+msgstr "The Mworago app is here!"
+
+msgid "All the K-pop & K-drama news in your pocket, a must-install."
+msgstr "All the K-pop & K-drama news in your pocket, a must-install."
+
+msgid "Install"
+msgstr "Install"

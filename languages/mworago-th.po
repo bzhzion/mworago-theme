@@ -217,3 +217,12 @@ msgstr "สมัครสมาชิก"
 
 msgid "Mon compte"
 msgstr "บัญชีของฉัน"
+
+msgid "The Mworago app is here!"
+msgstr "แอป Mworago มาแล้ว!"
+
+msgid "All the K-pop & K-drama news in your pocket, a must-install."
+msgstr "ข่าวสาร K-pop และ K-drama ทั้งหมดอยู่ในมือคุณ ต้องติดตั้งเลย"
+
+msgid "Install"
+msgstr "ติดตั้ง"

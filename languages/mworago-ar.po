@@ -221,3 +221,12 @@ msgstr "إنشاء حساب"
 
 msgid "Mon compte"
 msgstr "حسابي"
+
+msgid "The Mworago app is here!"
+msgstr "تطبيق Mworago وصل الآن!"
+
+msgid "All the K-pop & K-drama news in your pocket, a must-install."
+msgstr "كل أخبار الكيبوب والدراما الكورية في جيبك، لا غنى عنه."
+
+msgid "Install"
+msgstr "تثبيت"

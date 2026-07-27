@@ -198,3 +198,12 @@ msgstr "S'inscrire"
 
 msgid "Mon compte"
 msgstr "Mon compte"
+
+msgid "The Mworago app is here!"
+msgstr "L'app Mworago est arrivée !"
+
+msgid "All the K-pop & K-drama news in your pocket, a must-install."
+msgstr "Toute l'actu K-pop & K-drama dans votre poche, à installer absolument."
+
+msgid "Install"
+msgstr "Installer"
