@@ -40,10 +40,12 @@ function mworago_app_promo_banner() {
     ?>
     <div class="app-promo-wrap">
       <a href="<?php echo esc_url( $app_url ); ?>" class="app-promo">
-        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/app-icon.png' ); ?>" alt="" class="app-promo__icon" width="56" height="56" loading="lazy">
-        <span class="app-promo__text">
-          <strong class="app-promo__title"><?php esc_html_e( "L'app Mworago est arrivée !", 'mworago' ); ?></strong>
-          <span class="app-promo__sub"><?php esc_html_e( 'Toute l’actu K-pop & K-drama dans votre poche — à installer absolument.', 'mworago' ); ?></span>
+        <span class="app-promo__body">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/app-icon.png' ); ?>" alt="" class="app-promo__icon" width="56" height="56" loading="lazy">
+          <span class="app-promo__text">
+            <strong class="app-promo__title"><?php esc_html_e( "L'app Mworago est arrivée !", 'mworago' ); ?></strong>
+            <span class="app-promo__sub"><?php esc_html_e( 'Toute l’actu K-pop & K-drama dans votre poche — à installer absolument.', 'mworago' ); ?></span>
+          </span>
         </span>
         <span class="app-promo__cta"><?php esc_html_e( 'Installer', 'mworago' ); ?>&nbsp;→</span>
       </a>

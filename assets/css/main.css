@@ -930,6 +930,13 @@
       transform: translateY(-2px);
       box-shadow: 0 12px 34px var(--pink-glow);
     }
+    .app-promo__body {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-lg);
+      flex: 1;
+      min-width: 0;
+    }
     .app-promo__icon {
       flex-shrink: 0;
       width: 56px; height: 56px;
@@ -967,9 +974,9 @@
     }
     @media (max-width: 640px) {
       .app-promo-wrap { padding: 0 var(--sp-lg); }
-      .app-promo { flex-wrap: wrap; padding: var(--sp-lg); }
+      .app-promo { flex-direction: column; align-items: stretch; padding: var(--sp-lg); }
       .app-promo__icon { width: 44px; height: 44px; }
-      .app-promo__cta { margin-left: calc(44px + var(--sp-lg)); }
+      .app-promo__cta { margin-top: var(--sp-lg); text-align: center; }
     }
 
     /* Zone principale article — même conteneur que .articles */
