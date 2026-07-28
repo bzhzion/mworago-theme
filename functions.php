@@ -5,6 +5,12 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// ── DÉSACTIVE LES E-MAILS DE MISE À JOUR AUTO DES EXTENSIONS ─────────────────
+// Avec 13 sites, un e-mail par extension mise à jour auto devient ingérable.
+// Les mises à jour restent actives, seule la notification par e-mail est coupée.
+add_filter( 'auto_plugin_update_send_email', '__return_false' );
+add_filter( 'auto_theme_update_send_email', '__return_false' );
+
 // ── SANITIZATION DONNÉES SCRAPÉES (comebacks/dramas/top-charts/top-airing) ───
 // esc_html()/esc_attr() protègent du XSS mais pas des caractères Unicode de
 // contrôle/formatage (Cc/Cf : override RTL U+202E, zero-width U+200B...).
