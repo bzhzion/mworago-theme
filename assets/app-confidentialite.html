@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité : Mworago</title>
+  <meta name="description" content="Politique de confidentialité de Mworago : données traitées, bases légales, sous-traitants, durées de conservation, vos droits." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://fr.mworago.com/app-confidentialite" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="supported-color-schemes" content="dark" />
+  <!--
+    GABARIT DE PARC — source : admin/.claude/mobile-kit/politique-confidentialite.template.html
+    Ne pas modifier une copie sans corriger le gabarit, sinon les 14 politiques divergent.
+
+    Le contenu est DERIVE de la fiche de registre de l'app (bzhzion/registre). Les deux doivent
+    rester coherents : toute modification de finalite, de base legale, de duree, de destinataire
+    ou de sous-traitant se repercute dans les deux documents. Deux textes ecrits separement
+    finissent par se contredire, et c'est la contradiction qui est indefendable, pas
+    l'imperfection.
+
+    Ce que le gabarit garantit, et qu'il ne faut pas retirer en adaptant : les mentions imposees
+    par les Art. 13 et 14 du RGPD. Responsable de traitement identifie, finalites, BASE LEGALE de
+    chaque traitement, DUREE de conservation, destinataires et SOUS-TRAITANTS NOMMES, transferts
+    hors UE, mesures de securite, les six droits, et le droit de reclamation aupres de la CNIL.
+    L'omission d'une seule expose a une sanction : la CNIL a condamne Hubside a 525 000 euros en
+    avril 2024 pour s'etre contentee d'evoquer "des partenaires" sans les nommer.
+
+    Exigences des stores, qui portent sur la page et non sur son contenu : l'URL doit etre
+    publique, accessible SANS authentification, non geobloquee, et ne pas etre un PDF
+    (App Store guideline 5.1.1 et Google Play). Une page presente uniquement dans l'app ne
+    suffit pas, les deux consoles verifient l'URL declaree.
+
+    Deux emplacements facultatifs, EXTRA_HEAD et EXTRA_FOOTER, pour les apps dont la page est
+    servie par un site vitrine : la mesure d'audience et les liens de pied de page du site y
+    entrent, sans quoi la page se detacherait visuellement du reste du site. Les laisser a la
+    chaine vide quand la page est autonome.
+  -->
+  <style>
+    :root { --fond:#12100F; --panneau:#1C1918; --texte:#F2EDE9;
+            --texte-doux:#A79E98; --accent:#E4557A; --ligne:#332E2C; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--fond); color:var(--texte);
+           font-family:system-ui, -apple-system, sans-serif; line-height:1.7; }
+    main { max-width:720px; margin:0 auto; padding:3.5rem 1.5rem 5rem; }
+    h1 { font-family:Georgia, serif; font-size:clamp(1.8rem,4vw,2.4rem);
+         color:var(--accent); margin:0 0 .4rem; }
+    .date { font-size:.85rem; color:var(--texte-doux); margin:0 0 2.5rem; }
+    h2 { font-family:Georgia, serif; font-size:1.2rem; color:var(--accent);
+         margin:2.5rem 0 .6rem; }
+    p, li { font-size:.95rem; color:var(--texte); }
+    ul { padding-left:1.25rem; }
+    a { color:var(--accent); }
+    table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.9rem; }
+    th, td { text-align:left; padding:.55rem .6rem; border-bottom:1px solid var(--ligne);
+             vertical-align:top; }
+    th { color:var(--texte-doux); font-weight:600; }
+    .encadre { background:var(--panneau); border:1px solid var(--ligne);
+               border-left:3px solid var(--accent); padding:1rem 1.1rem; margin:1.5rem 0;
+               border-radius:6px; }
+    footer { border-top:1px solid var(--ligne); margin-top:3rem; padding-top:1.5rem;
+             font-size:.85rem; color:var(--texte-doux); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Mworago &middot; Dernière mise à jour : 2 septembre 2026</p>
+
+  <div class="encadre">
+    <p><strong>En bref.</strong> L'application Mworago se lit <strong>sans compte</strong> : nous ne vous demandons ni adresse, ni inscription, et vos favoris comme vos réglages restent sur votre téléphone. Nous comptons les articles lus pour savoir ce qui intéresse, avec notre propre outil de mesure et sans vous identifier. L'application affiche des publicités Google pour financer le média, et vous pouvez revenir sur ce choix à tout moment.</p>
+  </div>
+
+  <h2>Responsable du traitement</h2>
+  <p>Cette application est éditée par l'<strong>association Breizhzion</strong> (loi 1901),
+  4 rue Isabelle Sadoyan, 69100 Villeurbanne, France &middot; SIREN 488 930 819.</p>
+  <p>Délégué à la protection des données : Thierry Oliveira &middot;
+  <a href="mailto:contact@breizhzion.com">contact@breizhzion.com</a>.
+  Pour toute question sur cette application :
+  <a href="mailto:contact@mworago.com">contact@mworago.com</a>.</p>
+
+  <h2>Données traitées, finalités et bases légales</h2>
+  <table>
+    <thead>
+      <tr><th>Données</th><th>Pourquoi</th><th>Base légale</th><th>Conservation</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Langue, thème, mode d'affichage, favoris</td>
+        <td>Retrouver l'application comme vous l'avez laissée</td>
+        <td>Sans objet : ces réglages restent sur votre appareil</td>
+        <td>Jusqu'à désinstallation</td>
+      </tr>
+      <tr>
+        <td>Identifiant de l'article ouvert, et son adresse</td>
+        <td>Compter les lectures et alimenter le classement des articles populaires</td>
+        <td>Intérêt légitime (art. 6.1.f) : mesure d'audience statistique</td>
+        <td>Totaux uniquement, aucune donnée individuelle</td>
+      </tr>
+      <tr>
+        <td>Adresse IP reçue par nos serveurs</td>
+        <td>Conséquence de toute requête réseau : servir les articles et enregistrer la
+        lecture</td>
+        <td>Intérêt légitime (art. 6.1.f)</td>
+        <td>Journaux techniques du serveur</td>
+      </tr>
+      <tr>
+        <td>Données techniques collectées par le SDK publicitaire de Google</td>
+        <td>Afficher les publicités qui financent le média</td>
+        <td><strong>Consentement (art. 6.1.a)</strong>, demandé avant toute publicité</td>
+        <td>Déterminée par Google</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Aucun compte, aucun profil de lecture</h2>
+  <p>Il n'y a rien à créer pour lire Mworago. Vos favoris, votre langue et vos réglages sont
+  <strong>sur votre téléphone</strong>, pas chez nous. Nous ne constituons <strong>aucun profil
+  de lecture</strong>, ne recoupons rien, et ne vous recommandons rien sur la base de ce que vous
+  avez lu.</p>
+
+  <h2>Comment nous comptons les lectures</h2>
+  <p>Quand vous ouvrez un article, l'application envoie deux informations. Au site d'origine,
+  <strong>l'identifiant de l'article</strong>, qui alimente le compteur de vues et le classement
+  des articles populaires. À notre outil de mesure, <strong>l'adresse de l'article</strong>.</p>
+  <p>Aucun identifiant de lecteur, aucun identifiant d'appareil et aucun cookie n'accompagnent ces
+  envois : il n'y a rien qui permette de relier deux lectures à la même personne. Notre outil de
+  mesure, <strong>Plausible</strong>, tourne sur <strong>nos propres serveurs</strong> : aucune
+  donnée ne part vers un service d'analyse tiers. C'est pourquoi aucun bandeau de consentement ne
+  vous est présenté pour cette mesure, il n'y a rien à consentir.</p>
+  <p>Comme toute requête faite depuis un téléphone, ces envois nous font néanmoins voir votre
+  <strong>adresse IP</strong>, et c'est pourquoi ils figurent dans le tableau ci-dessus.</p>
+
+  <h2>La publicité</h2>
+  <p>L'application affiche des publicités via <strong>Google AdMob</strong> pour financer le
+  média. Votre <strong>consentement est demandé avant même que le module publicitaire ne
+  démarre</strong>, et si vous le refusez, aucune publicité n'est chargée.</p>
+  <p>Vous pouvez <strong>revenir sur ce choix à tout moment</strong> depuis les réglages de
+  l'application, entrée « Choix publicitaires ».</p>
+  <p>Google n'agit pas pour notre compte mais pour le sien : c'est lui qui décide ce qu'il fait de
+  ces données, et sa
+  <a href="https://policies.google.com/technologies/ads" rel="noopener">politique publicitaire</a>
+  s'applique en propre. Nous ne recevons de sa part que des totaux de revenus.</p>
+  <p><strong>Sur iPhone et iPad, l'application ne demande pas l'autorisation de vous suivre</strong>
+  et n'accède donc pas à l'identifiant publicitaire d'Apple : les publicités y sont
+  contextuelles.</p>
+
+  <h2>Les vidéos et les images</h2>
+  <p>Les vidéos intégrées aux articles sont servies par <strong>YouTube</strong>, via son domaine
+  <strong>sans cookie</strong> (<code>youtube-nocookie.com</code>), choix délibéré qui limite le
+  dépôt de traceurs. Les vignettes viennent des serveurs d'images de YouTube. Lire une vidéo vous
+  rend visible de Google, indépendamment de nous.</p>
+  <p>Les liens vers Bluesky, Instagram, Threads, TikTok ou YouTube s'ouvrent dans votre navigateur,
+  à votre initiative, et vous rendent alors visible de ces plateformes.</p>
+
+  <h2>Notifications</h2>
+  <p>Les notifications de l'application sont <strong>programmées sur votre appareil</strong>. Aucun
+  jeton n'est enregistré chez nous, aucun serveur ne vous envoie quoi que ce soit, et aucun service
+  de notification tiers n'est impliqué.</p>
+
+  <h2>Qui a accès à ces données</h2>
+  <ul>
+    <li><strong>Personne.</strong> Il n'y a pas de compte, donc rien à consulter vous
+    concernant.</li>
+    <li>Les <strong>administrateurs de l'association</strong> voient les statistiques de
+    fréquentation, qui sont des totaux.</li>
+  </ul>
+  <p>Nous ne vendons aucune donnée, ne les cédons à aucun tiers à des fins commerciales, et ne
+  les utilisons pas pour de la publicité.</p>
+
+  <h2>Sous-traitants et tiers</h2>
+  <ul>
+    <li><strong>OVHcloud</strong> (France) : hébergement des sites et des sauvegardes.</li>
+    <li><strong>Cloudflare</strong> : acheminement réseau, données en transit uniquement.</li>
+  </ul>
+  <p>Notre outil de mesure d'audience tourne sur <strong>nos propres serveurs</strong> et n'est
+  donc pas un tiers.</p>
+  <p>Deux acteurs reçoivent des données sans agir pour notre compte, et ne sont donc pas des
+  sous-traitants : <strong>Google Ireland Ltd</strong> pour la publicité, avec ses propres
+  finalités, et <strong>YouTube</strong> lorsque vous lisez une vidéo intégrée.</p>
+
+  <h2>Transferts hors Union européenne</h2>
+  <p>Les articles, les compteurs de lecture et la mesure d'audience restent sur nos serveurs en
+  France.</p>
+  <p>Seul le <strong>module publicitaire</strong> de Google fait sortir des données de l'Union,
+  son infrastructure étant mondiale, et uniquement si vous avez consenti à la publicité. Ce
+  transfert est encadré par les clauses contractuelles types et le Data Privacy Framework. Lire
+  une vidéo YouTube produit le même effet, aux conditions de Google.</p>
+
+  <h2>Sécurité</h2>
+  <p>Connexions chiffrées (HTTPS), <strong>aucun mot de passe puisqu'il n'y a aucun
+  compte</strong>, en-têtes de sécurité posés par les sites, et validation de l'adresse de
+  destination du comptage de lectures : celle-ci n'est acceptée que si elle appartient au domaine
+  du média, ce qui empêche un article mal formé de faire partir cette information ailleurs.</p>
+
+  <h2>Ce que nous ne faisons pas</h2>
+  <ul>
+    <li><strong>Aucun compte, aucune inscription, aucune adresse e-mail demandée.</strong></li>
+    <li>Aucun profil de lecture, aucun historique envoyé à un serveur, aucune recommandation
+    personnalisée.</li>
+    <li>Aucun outil d'analyse tiers : notre mesure d'audience est auto-hébergée.</li>
+    <li>Aucun rapport de plantage envoyé à un service tiers en l'état de l'application.</li>
+    <li>Aucun accès à votre position, à vos contacts, à vos photos ni à votre micro.</li>
+    <li>Aucune décision automatisée au sens de l'article 22.</li>
+  </ul>
+
+  <h2>Vos droits</h2>
+  <p>Vous disposez des droits d'<strong>accès</strong>, de <strong>rectification</strong>,
+  d'<strong>effacement</strong>, de <strong>limitation</strong> du traitement,
+  d'<strong>opposition</strong>, et de <strong>portabilité</strong> de vos données. Lorsqu'un
+  traitement repose sur votre consentement, vous pouvez le retirer à tout moment.</p>
+  <p>N'ayant pas de compte, il n'y a rien à consulter ni à corriger chez nous : vos favoris et vos réglages s'effacent depuis l'application ou en la désinstallant. Vous pouvez revenir sur votre choix publicitaire dans les réglages, entrée « Choix publicitaires ».</p>
+  <p>Pour les autres demandes, écrivez à
+  <a href="mailto:contact@breizhzion.com">contact@breizhzion.com</a>. Nous répondons dans le mois.</p>
+  <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à
+  la <strong>CNIL</strong>, 3 place de Fontenoy, 75007 Paris,
+  <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>.</p>
+
+  <h2>Modifications</h2>
+  <p>Toute évolution de cette politique est publiée sur cette page, avec sa date de mise à jour.
+  Si un changement portait sur un traitement reposant sur votre consentement, celui-ci vous serait
+  redemandé.</p>
+
+  <footer>
+    Association Breizhzion &middot; 4 rue Isabelle Sadoyan, 69100 Villeurbanne &middot;
+    SIREN 488 930 819 &middot; <a href="mailto:contact@breizhzion.com">contact@breizhzion.com</a>
+  </footer>
+</main>
+</body>
+</html>
