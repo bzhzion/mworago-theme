@@ -815,43 +815,6 @@ add_action( 'template_redirect', function() {
     exit;
 } );
 
-// ── Politique de confidentialité de l'application mobile ────────────────────
-//
-// Sert `assets/app-confidentialite.html` à l'URL `/app-confidentialite`.
-//
-// Pourquoi un hook `template_redirect` et non un `page-<slug>.php` comme les templates
-// calendrier : ceux-là exigent qu'une page existe dans WordPress, donc une création de
-// contenu à faire à la main sur 13 sites en production. Pourquoi pas non plus
-// `add_rewrite_rule` : une règle de réécriture n'est prise en compte qu'après un
-// `wp rewrite flush`, et une page qui répond 404 tant que personne n'a lancé cette
-// commande est exactement le genre de lien mort qui fait rejeter une fiche de store.
-//
-// `template_redirect` se déclenche aussi sur une URL inconnue, avant le rendu du 404 :
-// intercepter à cet endroit ne demande donc ni page, ni règle, ni flush. Le fichier est
-// versionné avec le thème et part avec lui à chaque déploiement.
-//
-// Contenu généré depuis le gabarit de parc
-// (admin/.claude/mobile-kit/politique-confidentialite.template.html) et dérivé de la fiche
-// de registre mworago-app.md de bzhzion/registre. Ne pas le retoucher ici : corriger le
-// gabarit ou la fiche, et régénérer.
-
-add_action( 'template_redirect', function() {
-    if ( is_admin() ) return;
-    $chemin = strtok( $_SERVER['REQUEST_URI'] ?? '', '?' );
-    if ( rtrim( (string) $chemin, '/' ) !== '/app-confidentialite' ) return;
-
-    // get_theme_file_path() et non get_template_directory() : il regarde le theme enfant
-    // avant le parent, donc ce hook continue de fonctionner si un site passe un jour par un
-    // theme enfant.
-    $fichier = get_theme_file_path( 'assets/app-confidentialite.html' );
-    if ( ! file_exists( $fichier ) ) return; // laisse le 404 normal plutot qu'une page vide
-
-    status_header( 200 );
-    header( 'Content-Type: text/html; charset=utf-8' );
-    readfile( $fichier );
-    exit;
-} );
-
 // ── SÉCURITÉ — Vérification du paquet thème après téléchargement (H2) ────────
 
 add_filter( 'upgrader_source_selection', function( $source, $remote_source, $upgrader, $args ) {
