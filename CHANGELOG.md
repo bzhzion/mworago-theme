@@ -12,6 +12,17 @@ documentation. L'historique git reste la source de vérité pour ce qui précèd
 
 ## [Unreleased]
 
+### Corrigé
+
+- **La maquette `templates/homepage-2026.html` tirait DM Sans de Google.** Elle sert désormais la
+  police depuis les fichiers **déjà embarqués dans le thème** (`assets/fonts/`), en chemins
+  relatifs pour que le fichier reste ouvrable directement depuis le disque, ce qui est tout
+  l'intérêt d'une maquette autonome. Rien à télécharger, rien à ajouter au CDN.
+- **Précision qui compte : la production n'avait aucune fuite.** Ce fichier n'est référencé par
+  aucun PHP du thème, c'est une maquette et non un gabarit servi, et `functions.php` charge déjà
+  DM Sans en local avec un `preload`. La correction évite qu'on recopie le lien Google depuis cette
+  maquette vers une page réelle, elle ne répare pas une fuite en ligne.
+
 ### Annulé le jour même
 
 - Un hook `template_redirect` servant une politique de confidentialité de l'application mobile à
