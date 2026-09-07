@@ -4,3 +4,14 @@
 *.js  text eol=lf working-tree-encoding=UTF-8
 *.po  text eol=lf working-tree-encoding=UTF-8
 .githooks/* text eol=lf
+
+# Convention de fins de ligne du parc, voir
+# admin/.claude/gitattributes-parc pour le detail et le pourquoi.
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+Dockerfile text eol=lf
+*.bash text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
