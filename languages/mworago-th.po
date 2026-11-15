@@ -226,3 +226,15 @@ msgstr "ข่าวสาร K-pop และ K-drama ทั้งหมดอ�
 
 msgid "Install"
 msgstr "ติดตั้ง"
+
+msgid "The nominees are revealed! Voting opens on November 26 in the app."
+msgstr "เปิดเผยรายชื่อผู้เข้าชิงแล้ว! เริ่มโหวตในแอปวันที่ 26 พฤศจิกายน"
+
+msgid "Voting is open until December 10. Pick your favourites in the app!"
+msgstr "โหวตได้ถึงวันที่ 10 ธันวาคม เลือกคนโปรดของคุณในแอปเลย!"
+
+msgid "Voting is closed. The results come on December 15."
+msgstr "ปิดโหวตแล้ว ประกาศผลวันที่ 15 ธันวาคม"
+
+msgid "Discover the Awards"
+msgstr "ดูรางวัล"

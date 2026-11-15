@@ -972,6 +972,20 @@
       border-radius: var(--r-full);
       white-space: nowrap;
     }
+    /* Variante Awards : fond sombre, or sur sombre (contrastes de brand/awards du depot mworago-app) */
+    .app-promo--awards {
+      background: #080412;
+      border: 2px solid rgba(246,224,143,0.55);
+      box-shadow: 0 8px 28px rgba(201,150,45,0.28);
+    }
+    .app-promo--awards:hover { box-shadow: 0 12px 34px rgba(201,150,45,0.4); }
+    .app-promo--awards .app-promo__icon { box-shadow: none; border-radius: 0; height: auto; }
+    .app-promo--awards .app-promo__title { color: #F6E08F; }
+    .app-promo--awards .app-promo__sub { color: #EDE9FE; }
+    .app-promo--awards .app-promo__cta {
+      color: #1A0B00;
+      background: linear-gradient(135deg, #F6E08F, #C9962D 60%, #B8862F);
+    }
     @media (max-width: 640px) {
       .app-promo-wrap { padding: 0 var(--sp-lg); }
       .app-promo { flex-direction: column; align-items: stretch; padding: var(--sp-lg); }

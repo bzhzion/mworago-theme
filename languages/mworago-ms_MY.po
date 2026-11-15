@@ -226,3 +226,15 @@ msgstr "Semua berita K-pop dan K-drama dalam poket anda, wajib pasang."
 
 msgid "Install"
 msgstr "Pasang"
+
+msgid "The nominees are revealed! Voting opens on November 26 in the app."
+msgstr "Calon telah didedahkan! Pengundian dibuka pada 26 November dalam aplikasi."
+
+msgid "Voting is open until December 10. Pick your favourites in the app!"
+msgstr "Pengundian dibuka sehingga 10 Disember. Pilih kegemaran anda dalam aplikasi!"
+
+msgid "Voting is closed. The results come on December 15."
+msgstr "Pengundian telah ditutup. Keputusan akan diumumkan pada 15 Disember."
+
+msgid "Discover the Awards"
+msgstr "Terokai Awards"

@@ -230,3 +230,15 @@ msgstr "كل أخبار الكيبوب والدراما الكورية في جي
 
 msgid "Install"
 msgstr "تثبيت"
+
+msgid "The nominees are revealed! Voting opens on November 26 in the app."
+msgstr "تم الكشف عن المرشحين! يفتح التصويت في 26 نوفمبر داخل التطبيق."
+
+msgid "Voting is open until December 10. Pick your favourites in the app!"
+msgstr "التصويت مفتوح حتى 10 ديسمبر. اختر مفضّلاتك في التطبيق!"
+
+msgid "Voting is closed. The results come on December 15."
+msgstr "انتهى التصويت. تُعلن النتائج في 15 ديسمبر."
+
+msgid "Discover the Awards"
+msgstr "اكتشف الجوائز"

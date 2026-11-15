@@ -230,3 +230,15 @@ msgstr "Tutte le novità K-pop e K-drama in tasca, da installare subito."
 
 msgid "Install"
 msgstr "Installa"
+
+msgid "The nominees are revealed! Voting opens on November 26 in the app."
+msgstr "I candidati sono stati svelati! Il voto si apre il 26 novembre nell'app."
+
+msgid "Voting is open until December 10. Pick your favourites in the app!"
+msgstr "Il voto è aperto fino al 10 dicembre. Scegli i tuoi preferiti nell'app!"
+
+msgid "Voting is closed. The results come on December 15."
+msgstr "Il voto è chiuso. I risultati arrivano il 15 dicembre."
+
+msgid "Discover the Awards"
+msgstr "Scopri gli Awards"

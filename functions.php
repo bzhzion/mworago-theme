@@ -40,8 +40,61 @@ function mworago_sanitize_scraped_data( $data ) {
     return mworago_strip_unicode_controls( $data );
 }
 
+// ── MWORAGO AWARDS 2026 — phase en cours ─────────────────────────────────────
+// Dates en UTC, les memes que le Worker de vote (voir admin/docs/mworago-awards.md) :
+// annonce des nommes le 15 novembre, vote du 26 novembre au 10 decembre INCLUS, resultats
+// le 15 decembre. Rend 'avant' (nommes connus, vote pas ouvert), 'vote', 'clos' (vote
+// termine, resultats a venir) ou null hors de la periode : le bandeau de l'app reprend alors
+// tout seul, sans rien a modifier ni a deployer.
+function mworago_awards_phase( $now = null ) {
+    $now       = null === $now ? time() : (int) $now;
+    $annonce   = gmmktime( 0, 0, 0, 11, 15, 2026 );
+    $ouverture = gmmktime( 0, 0, 0, 11, 26, 2026 );
+    $cloture   = gmmktime( 0, 0, 0, 12, 11, 2026 );
+    $fin       = gmmktime( 0, 0, 0, 12, 16, 2026 );
+    if ( $now < $annonce || $now >= $fin ) {
+        return null;
+    }
+    if ( $now < $ouverture ) {
+        return 'avant';
+    }
+    return $now < $cloture ? 'vote' : 'clos';
+}
+
+// Bandeau des Awards : meme emplacement et meme structure que celui de l'app, pour ne rien changer ailleurs.
+function mworago_awards_promo_banner( $phase ) {
+    $awards_url = trailingslashit( home_url( '/awards/' ) );
+    if ( 'vote' === $phase ) {
+        $sub = __( 'Voting is open until December 10. Pick your favourites in the app!', 'mworago' );
+    } elseif ( 'clos' === $phase ) {
+        $sub = __( 'Voting is closed. The results come on December 15.', 'mworago' );
+    } else {
+        $sub = __( 'The nominees are revealed! Voting opens on November 26 in the app.', 'mworago' );
+    }
+    ?>
+    <div class="app-promo-wrap">
+      <a href="<?php echo esc_url( $awards_url ); ?>" class="app-promo app-promo--awards">
+        <span class="app-promo__body">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/awards-bulle.png' ); ?>" alt="" class="app-promo__icon app-promo__icon--awards" width="56" height="52" loading="lazy">
+          <span class="app-promo__text">
+            <strong class="app-promo__title">Mworago Awards 2026</strong>
+            <span class="app-promo__sub"><?php echo esc_html( $sub ); ?></span>
+          </span>
+        </span>
+        <span class="app-promo__cta"><?php esc_html_e( 'Discover the Awards', 'mworago' ); ?>&nbsp;→</span>
+      </a>
+    </div>
+    <?php
+}
+
 // ── PROMO APP MOBILE — bandeau entre l'image à la une et l'article ──────────
+// Pendant les Awards, le bandeau des Awards prend la place de celui de l'app.
 function mworago_app_promo_banner() {
+    $phase = mworago_awards_phase();
+    if ( null !== $phase ) {
+        mworago_awards_promo_banner( $phase );
+        return;
+    }
     $app_url = trailingslashit( home_url( '/app/' ) );
     ?>
     <div class="app-promo-wrap">

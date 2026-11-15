@@ -230,3 +230,15 @@ msgstr "Lahat ng balita ng K-pop at K-drama nasa bulsa mo na, dapat i-install."
 
 msgid "Install"
 msgstr "I-install"
+
+msgid "The nominees are revealed! Voting opens on November 26 in the app."
+msgstr "Inilalantad na ang mga nominado! Magbubukas ang botohan sa Nobyembre 26 sa app."
+
+msgid "Voting is open until December 10. Pick your favourites in the app!"
+msgstr "Bukas ang botohan hanggang Disyembre 10. Piliin ang iyong mga paborito sa app!"
+
+msgid "Voting is closed. The results come on December 15."
+msgstr "Sarado na ang botohan. Ilalabas ang mga resulta sa Disyembre 15."
+
+msgid "Discover the Awards"
+msgstr "Tuklasin ang Awards"

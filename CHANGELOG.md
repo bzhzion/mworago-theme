@@ -12,6 +12,12 @@ documentation. L'historique git reste la source de vérité pour ce qui précèd
 
 ## [Unreleased]
 
+## [3.2.0] - 2026-11-15
+
+### Ajouté
+
+- **Bandeau des Mworago Awards 2026 à la place de celui de l'app, pendant les Awards, automatiquement.** `mworago_app_promo_banner()` (entre l'image à la une et l'article) demande d'abord `mworago_awards_phase()` : du **15 novembre au 15 décembre inclus** (dates en UTC, celles du Worker de vote), le bandeau « L'app Mworago est arrivée ! » cède sa place à un bandeau « Mworago Awards 2026 » qui renvoie vers la page `/awards/` du site. **Trois phases, tout par la date, sans rien à redéployer** : `avant` (15 au 25 novembre : « les nommés sont dévoilés, le vote ouvre le 26 »), `vote` (26 novembre au 10 décembre inclus : « le vote est ouvert jusqu'au 10 décembre ») et `clos` (11 au 15 décembre : « le vote est terminé, résultats le 15 »). Hors de cette période, le bandeau de l'app revient tout seul. Variante `.app-promo--awards` (fond sombre, or sur sombre, mêmes contrastes que le logo des Awards), icône `assets/img/awards-bulle.png`. Quatre chaînes nouvelles, **traduites dans les 13 catalogues** (source en anglais, comme le reste du thème) ; les traductions autres que le français et l'anglais n'ont pas été relues. ⚠️ **La page `/awards/` doit exister sur chaque site** : elle est publiée sur les 13 (voir `admin/docs/mworago-awards.md`).
+
 ### Modifié
 - `.gitignore` : toute variante `.env.*` est ignorée, sauf `.env.example`. Une copie de sauvegarde `.env.bak-*` porte les mêmes secrets que `.env` (règle de parc du 2026-11-03).
 
